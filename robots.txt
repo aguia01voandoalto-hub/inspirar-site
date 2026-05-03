@@ -1,0 +1,27 @@
+# robots.txt — inspirar.app
+# Permitir indexação completa do site institucional
+
+User-agent: *
+Allow: /
+
+# Bots de IA — bloquear treinamento (proteção de marca/conteúdo)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+# Sitemap
+Sitemap: https://inspirar.app/sitemap.xml
