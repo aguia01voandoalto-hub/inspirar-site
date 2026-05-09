@@ -391,7 +391,7 @@ h1.hero-title .accent {
 h1.hero-title .accent::after {
   content: '';
   position: absolute;
-  bottom: 8px;
+  bottom: -4px;
   left: -2px; right: -2px;
   height: 2px;
   background: var(--green-leaf);
@@ -1869,6 +1869,20 @@ footer {
 }
 .footer-col a:hover { color: var(--peach); padding-left: 4px; }
 
+.footer-contact-link {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 10px;
+}
+.footer-contact-link:hover { padding-left: 0 !important; }
+.footer-contact-link:hover .footer-icon { color: var(--green-leaf); transform: scale(1.1); }
+.footer-icon {
+  flex-shrink: 0;
+  color: var(--green-leaf);
+  opacity: 0.85;
+  transition: color 0.3s, transform 0.3s;
+}
+
 .footer-bottom {
   max-width: 1500px;
   margin: 0 auto;
@@ -2219,7 +2233,7 @@ footer {
       <div class="objection-card reveal delay-1">
         <div class="objection-q">"É americano traduzido ou é nacional?"</div>
         <div class="objection-a">
-          <strong>100% brasileiro.</strong> Operado pela Inspirar Soluções em Tecnologia LTDA (CNPJ 66.326.453/0001-10), sediada em Cuiabá/MT. Conteúdo em português, contexto cultural brasileiro, suporte em português.
+          <strong>100% brasileiro.</strong> Operado pela Inspirar Soluções em Tecnologia LTDA (CNPJ 66.326.453/0001-10). Conteúdo em português, contexto cultural brasileiro, suporte em português.
         </div>
       </div>
 
@@ -2328,17 +2342,39 @@ footer {
       </ul>
     </div>
     <div class="footer-col">
+      <h4>Contato</h4>
+      <ul>
+        <li>
+          <a href="mailto:suporte@inspirar.app" class="footer-contact-link">
+            <svg class="footer-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="M22 7l-10 6L2 7"/>
+            </svg>
+            <span>suporte@inspirar.app</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/inspirarapp" target="_blank" rel="noopener" class="footer-contact-link">
+            <svg class="footer-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+            <span>@inspirarapp</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-col">
       <h4>Legal</h4>
       <ul>
         <li><a href="https://app.inspirar.app/privacidade">Política de Privacidade</a></li>
         <li><a href="https://app.inspirar.app/termos">Termos de Uso</a></li>
-        <li><a href="#">LGPD</a></li>
-        <li><a href="mailto:contato@inspirar.app">Contato</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <div>© 2026 INSPIRAR SOLUÇÕES EM TECNOLOGIA LTDA · CNPJ 66.326.453/0001-10 · Cuiabá/MT</div>
+    <div>© 2026 INSPIRAR SOLUÇÕES EM TECNOLOGIA LTDA · CNPJ 66.326.453/0001-10</div>
     <div>Feito com 💚 para Sua glória</div>
   </div>
 </footer>
