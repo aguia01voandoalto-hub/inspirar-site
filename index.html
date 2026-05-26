@@ -1,2414 +1,502 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 
-<!-- SEO Primary -->
+<!-- SEO -->
 <title>Inspirar.app — Sua conexão com Deus em meio ao caos da rotina</title>
-<meta name="description" content="App cristão brasileiro com devocional diário, mural de orações em comunidade, estudos bíblicos e meditações. Selecionado pelo SEBRAE Start&UP. Beta gratuito." />
-<meta name="keywords" content="devocional diário, oração, app cristão, estudo bíblico, versículo do dia, oração da manhã, meditação cristã, comunidade cristã, app de fé, devocional cristão, app de oração, bíblia online" />
-<meta name="author" content="Inspirar Soluções em Tecnologia LTDA" />
-<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
-<link rel="canonical" href="https://inspirar.app/" />
-<meta name="theme-color" content="#14102E" />
-
-<!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
-<meta property="og:type" content="website" />
-<meta property="og:locale" content="pt_BR" />
-<meta property="og:site_name" content="Inspirar.app" />
-<meta property="og:title" content="Inspirar — Sua conexão com Deus em meio ao caos da rotina" />
-<meta property="og:description" content="App cristão brasileiro com devocional diário, mural de orações, estudos bíblicos e meditações. Selecionado pelo SEBRAE Start&UP. Beta gratuito." />
-<meta property="og:url" content="https://inspirar.app/" />
-<meta property="og:image" content="https://inspirar.app/logo.png" />
-<meta property="og:image:width" content="600" />
-<meta property="og:image:height" content="204" />
-<meta property="og:image:alt" content="Inspirar.app — App cristão de devocional e oração" />
-
-<!-- Twitter / X -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Inspirar — Sua conexão com Deus em meio ao caos da rotina" />
-<meta name="twitter:description" content="App cristão brasileiro com devocional, oração e estudos bíblicos. Selecionado pelo SEBRAE Start&UP." />
-<meta name="twitter:image" content="https://inspirar.app/logo.png" />
-
-<!-- Geo / Locale -->
-<meta name="geo.region" content="BR-MT" />
-<meta name="geo.placename" content="Cuiabá" />
-
-<!-- Schema.org JSON-LD: SoftwareApplication + Organization -->
+<meta name="description" content="App cristão brasileiro com devocional diário, mural de orações, Caderno com Deus, estudos bíblicos e adoração. Selecionado pelo SEBRAE Start&UP. Beta gratuito."/>
+<meta name="keywords" content="devocional diário, oração, app cristão, estudo bíblico, versículo do dia, oração da manhã, caderno com Deus, comunidade cristã, app de fé"/>
+<meta name="author" content="Inspirar Soluções em Tecnologia LTDA"/>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://inspirar.app/"/>
+<meta name="theme-color" content="#FAEEE7"/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="pt_BR"/>
+<meta property="og:site_name" content="Inspirar.app"/>
+<meta property="og:title" content="Inspirar — Sua conexão com Deus em meio ao caos da rotina"/>
+<meta property="og:description" content="App cristão brasileiro com devocional, oração, Caderno com Deus e adoração. Selecionado pelo SEBRAE Start&UP."/>
+<meta property="og:url" content="https://inspirar.app/"/>
+<meta property="og:image" content="https://inspirar.app/logo.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Inspirar — Sua conexão com Deus em meio ao caos da rotina"/>
+<meta name="twitter:description" content="App cristão brasileiro com devocional, oração e Caderno com Deus. Selecionado pelo SEBRAE Start&UP."/>
+<meta name="twitter:image" content="https://inspirar.app/logo.png"/>
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://inspirar.app/#organization",
-      "name": "Inspirar Soluções em Tecnologia LTDA",
-      "alternateName": "Inspirar.app",
-      "url": "https://inspirar.app/",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://inspirar.app/logo.png",
-        "width": 600,
-        "height": 204
-      },
-      "description": "App cristão brasileiro com devocional diário, oração em comunidade, estudos bíblicos e meditações guiadas.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Cuiabá",
-        "addressRegion": "MT",
-        "addressCountry": "BR"
-      },
-      "taxID": "66.326.453/0001-10",
-      "sameAs": []
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://inspirar.app/#website",
-      "url": "https://inspirar.app/",
-      "name": "Inspirar.app",
-      "inLanguage": "pt-BR",
-      "publisher": { "@id": "https://inspirar.app/#organization" }
-    },
-    {
-      "@type": "MobileApplication",
-      "name": "Inspirar.app",
-      "operatingSystem": "Web, iOS, Android",
-      "applicationCategory": "LifestyleApplication",
-      "applicationSubCategory": "Religion & Spirituality",
-      "description": "App cristão de devocional diário, mural de orações em comunidade, estudos bíblicos, meditações e adoração.",
-      "url": "https://app.inspirar.app/",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "BRL"
-      },
-      "publisher": { "@id": "https://inspirar.app/#organization" },
-      "inLanguage": "pt-BR"
-    }
-  ]
-}
+{"@context":"https://schema.org","@graph":[
+{"@type":"Organization","@id":"https://inspirar.app/#organization","name":"Inspirar Soluções em Tecnologia LTDA","alternateName":"Inspirar.app","url":"https://inspirar.app/","logo":{"@type":"ImageObject","url":"https://inspirar.app/logo.png","width":600,"height":204},"description":"App cristão brasileiro com devocional diário, oração, Caderno com Deus e adoração.","taxID":"66.326.453/0001-10","sameAs":["https://instagram.com/inspirarapp"]},
+{"@type":"WebSite","@id":"https://inspirar.app/#website","url":"https://inspirar.app/","name":"Inspirar.app","inLanguage":"pt-BR","publisher":{"@id":"https://inspirar.app/#organization"}},
+{"@type":"MobileApplication","name":"Inspirar.app","operatingSystem":"Web, iOS, Android","applicationCategory":"LifestyleApplication","applicationSubCategory":"Religion & Spirituality","description":"App cristão de devocional diário, mural de orações, Caderno com Deus, estudos bíblicos e adoração.","url":"https://app.inspirar.app/","offers":{"@type":"Offer","price":"0","priceCurrency":"BRL"},"publisher":{"@id":"https://inspirar.app/#organization"},"inLanguage":"pt-BR"}
+]}
 </script>
 
-<link rel="icon" href="logo.png" />
-<link rel="apple-touch-icon" href="logo.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Instrument+Serif:ital@0;1&family=Inter:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-<!--
-  ════════════════════════════════════════════════════════════════
-  📸 GUIA DE TROCA DE IMAGENS — INSPIRAR.APP
-  ════════════════════════════════════════════════════════════════
-  Imagens marcadas com <!-- TROCAR: ... --> usam Unsplash.
-  Substitua por fotos reais dos seus usuários quando disponíveis.
-  ════════════════════════════════════════════════════════════════
--->
-
+<link rel="icon" href="logo.png"/>
+<link rel="apple-touch-icon" href="logo.png"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#e1c37b",
+                        "inverse-surface": "#332f35",
+                        "surface-variant": "#e9e0e8",
+                        "on-error": "#ffffff",
+                        "surface-container-highest": "#e9e0e8",
+                        "background": "#fff7fd",
+                        "surface-container-lowest": "#ffffff",
+                        "serene-cream": "#FAEEE7",
+                        "inverse-primary": "#e2b5ff",
+                        "secondary-fixed": "#c2f18a",
+                        "primary-fixed-dim": "#e2b5ff",
+                        "secondary-container": "#bfee87",
+                        "deep-indigo": "#14102E",
+                        "on-tertiary-container": "#c7ab65",
+                        "error-container": "#ffdad6",
+                        "on-secondary-container": "#466d15",
+                        "secondary-fixed-dim": "#a7d471",
+                        "on-primary-fixed-variant": "#603083",
+                        "outline-variant": "#cfc3d1",
+                        "on-background": "#1e1a20",
+                        "surface-tint": "#7a489d",
+                        "surface-bright": "#fff7fd",
+                        "mist-green": "#E8F5E9",
+                        "tertiary-fixed": "#ffdf94",
+                        "surface-container-low": "#faf1f9",
+                        "primary": "#430e66",
+                        "tertiary-container": "#533f01",
+                        "primary-container": "#5b2a7e",
+                        "on-primary-fixed": "#2f004d",
+                        "on-secondary-fixed": "#0f2000",
+                        "on-surface": "#1e1a20",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed-variant": "#2e4f00",
+                        "on-primary-container": "#cf98f4",
+                        "surface-container": "#f4ebf3",
+                        "surface": "#fff7fd",
+                        "on-tertiary-fixed-variant": "#584405",
+                        "tertiary": "#382a00",
+                        "error": "#ba1a1a",
+                        "surface-dim": "#e0d7df",
+                        "primary-fixed": "#f3daff",
+                        "secondary": "#426910",
+                        "on-tertiary-fixed": "#241a00",
+                        "outline": "#7d7481",
+                        "surface-container-high": "#eee5ee",
+                        "on-primary": "#ffffff",
+                        "soft-lilac": "#F3E8FF",
+                        "inverse-on-surface": "#f7eef6",
+                        "on-surface-variant": "#4c4450"
+                    },
+                    "borderRadius": {"DEFAULT": "0.25rem","lg": "0.5rem","xl": "0.75rem","full": "9999px"},
+                    "spacing": {"margin-mobile": "20px","margin-desktop": "40px","container-max": "1280px","gutter": "24px","section-gap": "120px","unit": "8px"},
+                    "fontFamily": {
+                        "body-md": ["Inter"],"label-md": ["Inter"],"body-lg": ["Inter"],
+                        "headline-lg": ["Plus Jakarta Sans"],"label-sm": ["Inter"],"headline-md": ["Plus Jakarta Sans"],
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],"display-lg": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                        "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
 <style>
-:root {
-  /* PALETA OFICIAL DA MARCA — roxos profundos do app */
-  --void: #0A0820;          /* purpleVoid — fundo mais profundo */
-  --wine-deep: #14102E;     /* purpleNight — fundo dominante */
-  --wine: #1D1840;          /* tom intermediário */
-  --wine-mid: #26215C;      /* purpleDeep — destaques */
-  --wine-soft: #5B2A7E;     /* purpleMid — botões secundários, eyebrow */
-  --wine-blush: #8B6BB8;    /* lavanda média */
-
-  --peach: #FAEEE7;
-  --peach-deep: #F5E0D3;
-  --peach-warm: #EFD4C2;
-  --cream: #FFF8F2;
-
-  --lavender-pale: #CECBF6; /* purplePale — destaques claros */
-
-  --green: #7BC142;
-  --green-deep: #5A9930;
-  --green-leaf: #A8D672;
-  --green-vivid: #9DE05E;
-  --purple: #5B2A7E;
-  --purple-soft: #8B6BB8;
-  --gold: #C8A04C;
-  --gold-bright: #E8C870;
-
-  --ink: #1A1530;
-  --ink-soft: #3A3055;
-  --ink-muted: #7A7095;
-
-  --line: rgba(206, 203, 246, 0.08);
-  --line-strong: rgba(206, 203, 246, 0.18);
-  --line-light: rgba(38, 33, 92, 0.12);
-  --line-light-strong: rgba(38, 33, 92, 0.22);
-}
-
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html {
-  scroll-behavior: smooth;
-  background: var(--wine-deep);
-}
-body {
-  font-family: 'Inter', -apple-system, sans-serif;
-  background: var(--wine-deep);
-  color: var(--peach);
-  line-height: 1.6;
-  font-size: 17px;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-}
-
-img { max-width: 100%; display: block; }
-a { color: inherit; text-decoration: none; }
-button { font-family: inherit; cursor: pointer; border: none; background: none; }
-
-/* Grain texture global */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 1;
-  opacity: 0.5;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
-  mix-blend-mode: overlay;
-}
-
-/* ============ NAV ============ */
-nav {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 100;
-  padding: 22px 48px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(26, 8, 8, 0.6);
-  backdrop-filter: blur(24px) saturate(140%);
-  -webkit-backdrop-filter: blur(24px) saturate(140%);
-  border-bottom: 1px solid transparent;
-  transition: all 0.4s ease;
-}
-nav.scrolled {
-  padding: 14px 48px;
-  border-bottom-color: var(--line);
-  background: rgba(10, 4, 4, 0.85);
-}
-
-.logo-mark {
-  display: flex;
-  align-items: center;
-  height: 38px;
-  transition: opacity 0.3s;
-}
-.logo-mark:hover { opacity: 0.85; }
-.logo-mark img {
-  height: 100%;
-  width: auto;
-  object-fit: contain;
-  filter:
-    drop-shadow(0 2px 8px rgba(168, 214, 114, 0.25))
-    brightness(1.05);
-}
-
-/* No nav reduzido (scroll), logo levemente menor */
-nav.scrolled .logo-mark { height: 32px; }
-.logo-mark { transition: height 0.3s ease; }
-
-/* Footer: logo um pouco maior */
-.footer-brand .logo-mark {
-  height: 44px;
-  margin-bottom: 24px;
-}
-
-.nav-links {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  font-size: 14px;
-  font-weight: 400;
-}
-.nav-links a {
-  color: rgba(250, 238, 231, 0.7);
-  position: relative;
-  transition: color 0.3s;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 12px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-.nav-links a::before {
-  content: '/ ';
-  color: var(--green-leaf);
-  opacity: 0.6;
-}
-.nav-links a:hover { color: var(--peach); }
-
-.nav-cta {
-  background: var(--peach);
-  color: var(--wine-deep);
-  padding: 12px 24px;
-  border-radius: 100px;
-  font-weight: 500;
-  font-size: 14px;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-.nav-cta:hover {
-  background: var(--green-leaf);
-  color: var(--wine-deep);
-  transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(168, 214, 114, 0.35);
-}
-.nav-cta::after { content: '→'; transition: transform 0.3s; }
-.nav-cta:hover::after { transform: translateX(4px); }
-
-@media (max-width: 900px) {
-  nav { padding: 16px 20px; }
-  nav.scrolled { padding: 12px 20px; }
-  .nav-links { display: none; }
-  .nav-cta { padding: 10px 18px; font-size: 13px; }
-}
-
-/* ============ HERO CINEMATOGRÁFICO ============ */
-.hero {
-  min-height: 100vh;
-  padding: 160px 48px 100px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  background:
-    radial-gradient(ellipse 100% 80% at 50% 100%, var(--wine-mid) 0%, transparent 60%),
-    linear-gradient(180deg, var(--void) 0%, var(--wine-deep) 50%, var(--wine) 100%);
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse 80% 50% at 20% 30%, rgba(168, 214, 114, 0.06), transparent 60%),
-    radial-gradient(ellipse 60% 40% at 80% 70%, rgba(206, 203, 246, 0.08), transparent 60%),
-    radial-gradient(ellipse 70% 50% at 50% 100%, rgba(91, 42, 126, 0.25), transparent 70%);
-  z-index: 0;
-}
-
-.hero-grid {
-  max-width: 1500px;
-  margin: 0 auto;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 80px;
-  align-items: center;
-  position: relative;
-  z-index: 2;
-}
-
-.hero-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  padding: 8px 18px;
-  border: 1px solid var(--line-strong);
-  border-radius: 100px;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
-  font-weight: 500;
-  color: rgba(250, 238, 231, 0.85);
-  margin-bottom: 36px;
-  background: rgba(250, 238, 231, 0.04);
-  backdrop-filter: blur(10px);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-.hero-eyebrow .pulse {
-  width: 8px; height: 8px;
-  background: var(--green-leaf);
-  border-radius: 50%;
-  position: relative;
-  box-shadow: 0 0 12px var(--green);
-}
-.hero-eyebrow .pulse::after {
-  content: '';
-  position: absolute;
-  inset: -4px;
-  border-radius: 50%;
-  background: var(--green-leaf);
-  opacity: 0.4;
-  animation: ping 2s infinite;
-}
-@keyframes ping {
-  0% { transform: scale(0.8); opacity: 0.6; }
-  100% { transform: scale(2.4); opacity: 0; }
-}
-
-h1.hero-title {
-  font-family: 'Playfair Display', serif;
-  font-weight: 400;
-  font-size: clamp(56px, 9vw, 132px);
-  line-height: 0.92;
-  letter-spacing: -0.045em;
-  margin-bottom: 36px;
-  color: var(--peach);
-}
-
-/* Stagger reveal for hero lines */
-.hero-line {
-  display: block;
-  overflow: hidden;
-}
-.hero-line-inner {
-  display: inline-block;
-  transform: translateY(110%);
-  opacity: 0;
-  animation: lineReveal 1.2s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-}
-.hero-line:nth-child(1) .hero-line-inner { animation-delay: 0.2s; }
-.hero-line:nth-child(2) .hero-line-inner { animation-delay: 0.4s; }
-.hero-line:nth-child(3) .hero-line-inner { animation-delay: 0.6s; }
-@keyframes lineReveal {
-  to { transform: translateY(0); opacity: 1; }
-}
-
-h1.hero-title .italic {
-  font-family: 'Instrument Serif', serif;
-  font-style: italic;
-  font-weight: 400;
-  color: var(--peach-warm);
-  opacity: 0.85;
-}
-h1.hero-title .accent {
-  position: relative;
-  display: inline-block;
-  color: var(--green-leaf);
-  background: linear-gradient(180deg, var(--green-leaf) 0%, var(--green-vivid) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-h1.hero-title .accent::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: -2px; right: -2px;
-  height: 2px;
-  background: var(--green-leaf);
-  transform: scaleX(0);
-  transform-origin: left;
-  animation: lineGrow 1s 1.4s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-}
-@keyframes lineGrow {
-  to { transform: scaleX(1); }
-}
-
-.hero-sub {
-  font-size: 19px;
-  color: rgba(250, 238, 231, 0.65);
-  max-width: 540px;
-  margin-bottom: 48px;
-  line-height: 1.55;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeUp 1s 0.9s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-}
-
-.hero-ctas {
-  display: flex;
-  gap: 18px;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 56px;
-  opacity: 0;
-  animation: fadeUp 1s 1.1s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-}
-
-.btn-primary {
-  background: var(--peach);
-  color: var(--wine-deep);
-  padding: 19px 38px;
-  border-radius: 100px;
-  font-size: 16px;
-  font-weight: 500;
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-  position: relative;
-  overflow: hidden;
-}
-.btn-primary::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: var(--green-leaf);
-  transform: translateY(100%);
-  transition: transform 0.4s cubic-bezier(0.65, 0, 0.35, 1);
-}
-.btn-primary:hover::before { transform: translateY(0); }
-.btn-primary span { position: relative; z-index: 1; }
-.btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 20px 40px rgba(168, 214, 114, 0.35);
-}
-.btn-primary .arrow { transition: transform 0.4s; }
-.btn-primary:hover .arrow { transform: translate(4px, -4px) rotate(-45deg); }
-
-.btn-secondary {
-  color: rgba(250, 238, 231, 0.85);
-  padding: 16px 4px;
-  font-weight: 500;
-  font-size: 14px;
-  font-family: 'JetBrains Mono', monospace;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  display: inline-flex;
-  align-items: center;
-  gap: 14px;
-  border-bottom: 1px solid var(--line-strong);
-  transition: all 0.4s;
-}
-.btn-secondary:hover { gap: 18px; border-color: var(--peach); color: var(--peach); }
-.btn-secondary .play {
-  width: 36px; height: 36px;
-  background: rgba(168, 214, 114, 0.15);
-  border: 1px solid var(--green-leaf);
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  color: var(--green-leaf);
-  font-size: 10px;
-  transition: all 0.4s;
-}
-.btn-secondary:hover .play {
-  background: var(--green-leaf);
-  color: var(--wine-deep);
-}
-
-.hero-beta {
-  padding-top: 36px;
-  border-top: 1px solid var(--line);
-  display: flex;
-  align-items: flex-start;
-  gap: 18px;
-  opacity: 0;
-  animation: fadeUp 1s 1.3s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-  max-width: 540px;
-}
-.hero-beta-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 7px 14px;
-  background: rgba(168, 214, 114, 0.12);
-  border: 1px solid rgba(168, 214, 114, 0.3);
-  border-radius: 100px;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
-  font-weight: 600;
-  color: var(--green-leaf);
-  letter-spacing: 0.18em;
-  flex-shrink: 0;
-  margin-top: 2px;
-}
-.hero-beta-badge .beta-dot {
-  width: 6px; height: 6px;
-  background: var(--green-leaf);
-  border-radius: 50%;
-  box-shadow: 0 0 8px var(--green-leaf);
-  animation: ping 2s infinite;
-}
-.hero-beta-text {
-  font-size: 15px;
-  color: rgba(250, 238, 231, 0.7);
-  line-height: 1.5;
-}
-.hero-beta-text strong {
-  color: var(--peach);
-  font-weight: 600;
-}
-
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* ============ HERO QUOTE (lado direito) ============ */
-.hero-visual {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 480px;
-  opacity: 0;
-  animation: fadeUp 1.2s 0.5s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-}
-
-.hero-visual-quote {
-  position: relative;
-  max-width: 520px;
-  padding: 60px 50px 50px;
-  text-align: left;
-}
-
-.hero-visual-quote::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50px;
-  width: 60px;
-  height: 1px;
-  background: linear-gradient(90deg, var(--green-leaf), transparent);
-}
-
-.hero-visual-quote-mark {
-  position: absolute;
-  top: 20px;
-  left: 30px;
-  font-family: 'Playfair Display', serif;
-  font-size: 140px;
-  line-height: 1;
-  color: var(--green-leaf);
-  opacity: 0.25;
-  font-weight: 400;
-  pointer-events: none;
-}
-
-.hero-visual-quote-text {
-  font-family: 'Instrument Serif', serif;
-  font-style: italic;
-  font-size: clamp(24px, 2.6vw, 34px);
-  line-height: 1.32;
-  letter-spacing: -0.01em;
-  color: var(--peach);
-  margin-bottom: 28px;
-  position: relative;
-  z-index: 1;
-}
-
-.hero-visual-quote-ref {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
-  letter-spacing: 0.28em;
-  color: var(--green-leaf);
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  gap: 14px;
-}
-.hero-visual-quote-ref::before {
-  content: '';
-  width: 36px;
-  height: 1px;
-  background: var(--green-leaf);
-  opacity: 0.6;
-}
-
-@media (max-width: 1100px) {
-  .hero { padding: 130px 24px 80px; min-height: auto; }
-  .hero-grid { grid-template-columns: 1fr; gap: 60px; }
-  .hero-beta { flex-direction: column; gap: 14px; padding-top: 28px; }
-  .hero-visual { min-height: auto; }
-  .hero-visual-quote { padding: 40px 30px 30px; }
-  .hero-visual-quote-mark { font-size: 100px; top: 10px; left: 16px; }
-}
-
-/* ============ SECTION BASE ============ */
-.section {
-  padding: 180px 48px;
-  position: relative;
-  z-index: 2;
-}
-.section.dark {
-  background: var(--wine-deep);
-  color: var(--peach);
-}
-.section.light {
-  background: var(--peach);
-  color: var(--wine-deep);
-}
-.section-inner { max-width: 1500px; margin: 0 auto; }
-
-.section-header {
-  margin-bottom: 100px;
-  max-width: 880px;
-}
-.section-header.center {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-.section-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--green-leaf);
-  margin-bottom: 28px;
-  font-family: 'JetBrains Mono', monospace;
-}
-.section.light .section-tag { color: var(--green-deep); }
-.section-tag::before {
-  content: '';
-  width: 32px;
-  height: 1px;
-  background: currentColor;
-  opacity: 0.6;
-}
-
-.section-title {
-  font-family: 'Playfair Display', serif;
-  font-weight: 400;
-  font-size: clamp(40px, 6.5vw, 92px);
-  line-height: 1.0;
-  letter-spacing: -0.035em;
-  margin-bottom: 32px;
-  color: var(--peach);
-}
-.section.light .section-title { color: var(--wine-deep); }
-.section-title .italic {
-  font-family: 'Instrument Serif', serif;
-  font-style: italic;
-  color: var(--peach-warm);
-  opacity: 0.7;
-}
-.section.light .section-title .italic {
-  color: var(--wine-mid);
-  opacity: 1;
-}
-.section-sub {
-  font-size: 20px;
-  color: rgba(250, 238, 231, 0.65);
-  line-height: 1.55;
-  max-width: 660px;
-  font-weight: 300;
-}
-.section.light .section-sub {
-  color: var(--ink-soft);
-}
-
-/* ============ FEATURES BENTO (escuro) ============ */
-.features-section {
-  padding: 180px 48px;
-  background: var(--wine-deep);
-}
-
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 24px;
-}
-
-.feature-card {
-  background: rgba(250, 238, 231, 0.025);
-  border-radius: 32px;
-  padding: 44px;
-  border: 1px solid var(--line);
-  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-.feature-card:hover {
-  transform: translateY(-8px);
-  border-color: var(--green-leaf);
-  background: rgba(168, 214, 114, 0.04);
-  box-shadow:
-    0 30px 80px -20px rgba(0, 0, 0, 0.5),
-    0 0 0 1px rgba(168, 214, 114, 0.3),
-    inset 0 1px 0 rgba(168, 214, 114, 0.1);
-}
-
-.feature-card.large { grid-column: span 7; min-height: 540px; }
-.feature-card.medium { grid-column: span 5; min-height: 540px; }
-.feature-card.small { grid-column: span 4; min-height: 420px; }
-.feature-card.wide { grid-column: span 8; min-height: 420px; }
-
-.feature-card.accent-green {
-  background: linear-gradient(135deg, rgba(90, 153, 48, 0.15) 0%, rgba(168, 214, 114, 0.05) 100%);
-  border-color: rgba(168, 214, 114, 0.2);
-}
-
-.feature-card.accent-purple {
-  background: linear-gradient(135deg, rgba(107, 63, 160, 0.15) 0%, rgba(139, 107, 184, 0.05) 100%);
-  border-color: rgba(139, 107, 184, 0.2);
-}
-
-.feature-card.accent-warm {
-  background: linear-gradient(135deg, rgba(91, 42, 126, 0.2) 0%, rgba(232, 200, 112, 0.05) 100%);
-  border-color: rgba(232, 200, 112, 0.2);
-}
-
-.feature-meta {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: rgba(250, 238, 231, 0.4);
-  margin-bottom: 14px;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-}
-.feature-meta::before {
-  content: '';
-  width: 24px;
-  height: 1px;
-  background: currentColor;
-}
-
-.feature-icon {
-  width: 64px; height: 64px;
-  border-radius: 18px;
-  background: rgba(168, 214, 114, 0.15);
-  border: 1px solid rgba(168, 214, 114, 0.2);
-  display: grid;
-  place-items: center;
-  margin-bottom: 28px;
-  font-size: 30px;
-  transition: all 0.5s;
-}
-.feature-card:hover .feature-icon {
-  transform: rotate(-8deg) scale(1.1);
-  background: rgba(168, 214, 114, 0.25);
-}
-.feature-card.accent-purple .feature-icon {
-  background: rgba(139, 107, 184, 0.2);
-  border-color: rgba(139, 107, 184, 0.3);
-}
-.feature-card.accent-warm .feature-icon {
-  background: rgba(232, 200, 112, 0.2);
-  border-color: rgba(232, 200, 112, 0.3);
-}
-
-/* Variante: ícone com a logomarca completa do Inspirar (horizontal) */
-.feature-icon-logo {
-  width: auto;
-  height: 56px;
-  min-width: 160px;
-  max-width: 220px;
-  background: rgba(168, 214, 114, 0.06);
-  border-color: rgba(168, 214, 114, 0.18);
-  border-radius: 14px;
-  padding: 12px 18px;
-  position: relative;
-  overflow: visible;
-}
-.feature-icon-logo::after {
-  content: '';
-  position: absolute;
-  inset: -8px;
-  border-radius: 18px;
-  background: radial-gradient(ellipse, rgba(168, 214, 114, 0.22) 0%, transparent 70%);
-  filter: blur(10px);
-  z-index: -1;
-  opacity: 0.6;
-  animation: iconLogoGlow 4s ease-in-out infinite;
-}
-.feature-icon-logo img {
-  width: auto;
-  height: 100%;
-  max-height: 32px;
-  object-fit: contain;
-  filter:
-    drop-shadow(0 2px 6px rgba(168, 214, 114, 0.35))
-    brightness(1.05);
-  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-.feature-card:hover .feature-icon-logo img {
-  transform: scale(1.06);
-}
-.feature-card:hover .feature-icon-logo {
-  transform: rotate(0) scale(1.03);
-  background: rgba(168, 214, 114, 0.1);
-  border-color: rgba(168, 214, 114, 0.3);
-}
-@keyframes iconLogoGlow {
-  0%, 100% { opacity: 0.5; transform: scale(1); }
-  50% { opacity: 0.9; transform: scale(1.12); }
-}
-
-.feature-title {
-  font-family: 'Playfair Display', serif;
-  font-weight: 400;
-  font-size: 36px;
-  letter-spacing: -0.025em;
-  line-height: 1.05;
-  margin-bottom: 16px;
-  color: var(--peach);
-}
-.feature-card.large .feature-title { font-size: 48px; }
-.feature-title .italic {
-  font-family: 'Instrument Serif', serif;
-  font-style: italic;
-  color: var(--green-leaf);
-}
-.feature-desc {
-  font-size: 16px;
-  color: rgba(250, 238, 231, 0.65);
-  line-height: 1.6;
-  flex: 1;
-  font-weight: 300;
-}
-
-.feature-bullets {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-.feature-bullets li {
-  font-size: 14px;
-  color: rgba(250, 238, 231, 0.7);
-  line-height: 1.5;
-  padding-left: 22px;
-  position: relative;
-  font-weight: 300;
-}
-.feature-bullets li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 9px;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--green-leaf);
-  box-shadow: 0 0 8px rgba(168, 214, 114, 0.5);
-}
-.feature-bullets li strong {
-  color: var(--peach);
-  font-weight: 600;
-  font-style: normal;
-}
-
-.feature-visual {
-  margin-top: 32px;
-  position: relative;
-}
-
-/* Devocional mockup */
-.devo-mockup {
-  background: rgba(0, 0, 0, 0.25);
-  border-radius: 22px;
-  padding: 26px;
-  border: 1px solid var(--line);
-}
-.devo-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 18px;
-}
-.devo-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--peach);
-}
-.devo-day-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 5px 12px;
-  background: rgba(168, 214, 114, 0.15);
-  color: var(--green-leaf);
-  border: 1px solid rgba(168, 214, 114, 0.3);
-  border-radius: 100px;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-.devo-day-badge .pulse-mini {
-  width: 5px; height: 5px;
-  background: var(--green-leaf);
-  border-radius: 50%;
-  animation: ping 2s infinite;
-}
-.devo-emotion-row {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-bottom: 18px;
-}
-.emotion-chip {
-  font-size: 12px;
-  padding: 6px 14px;
-  background: rgba(250, 238, 231, 0.06);
-  border: 1px solid var(--line);
-  border-radius: 100px;
-  color: rgba(250, 238, 231, 0.7);
-  font-weight: 400;
-  transition: all 0.3s;
-}
-.emotion-chip.active {
-  background: var(--peach);
-  color: var(--wine-deep);
-  border-color: var(--peach);
-}
-.devo-text {
-  font-family: 'Instrument Serif', serif;
-  font-size: 19px;
-  font-style: italic;
-  line-height: 1.4;
-  color: rgba(250, 238, 231, 0.92);
-  position: relative;
-  padding-left: 16px;
-  border-left: 2px solid var(--green-leaf);
-}
-
-/* Mural de Orações */
-.prayer-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.prayer-item {
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 16px;
-  padding: 16px;
-  border: 1px solid var(--line);
-  display: flex;
-  gap: 14px;
-  transition: all 0.3s;
-}
-.prayer-item:hover {
-  background: rgba(168, 214, 114, 0.05);
-  border-color: rgba(168, 214, 114, 0.2);
-}
-.prayer-avatar {
-  width: 40px; height: 40px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #FFC97A, var(--gold));
-  display: grid;
-  place-items: center;
-  font-weight: 600;
-  font-size: 15px;
-  color: var(--wine-deep);
-  flex-shrink: 0;
-  font-family: 'Playfair Display', serif;
-}
-.prayer-avatar.v2 { background: linear-gradient(135deg, var(--green-leaf), var(--green-deep)); }
-.prayer-avatar.v3 { background: linear-gradient(135deg, var(--wine-blush), var(--wine-soft)); color: var(--peach); }
-.prayer-content { flex: 1; min-width: 0; }
-.prayer-name {
-  font-size: 13px;
-  font-weight: 600;
-  margin-bottom: 4px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--peach);
-}
-.prayer-level {
-  font-size: 9px;
-  padding: 2px 8px;
-  background: rgba(168, 214, 114, 0.15);
-  color: var(--green-leaf);
-  border-radius: 100px;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-family: 'JetBrains Mono', monospace;
-}
-.prayer-text {
-  font-family: 'Instrument Serif', serif;
-  font-size: 14px;
-  font-style: italic;
-  color: rgba(250, 238, 231, 0.7);
-  line-height: 1.4;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-/* Streak rings */
-.streak-rings {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-top: 16px;
-}
-.day-ring {
-  width: 42px; height: 42px;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 11px;
-  font-weight: 600;
-  font-family: 'JetBrains Mono', monospace;
-  position: relative;
-}
-.day-ring.done {
-  background: var(--green-leaf);
-  color: var(--wine-deep);
-}
-.day-ring.done::before { content: '✓'; font-size: 16px; font-weight: 700; }
-.day-ring.done span { display: none; }
-.day-ring.today {
-  background: var(--peach);
-  color: var(--wine-deep);
-  box-shadow: 0 0 0 4px rgba(250, 238, 231, 0.2);
-  animation: pulseRing 2s infinite;
-}
-.day-ring.future {
-  background: rgba(250, 238, 231, 0.04);
-  color: rgba(250, 238, 231, 0.4);
-  border: 1px dashed var(--line-strong);
-}
-@keyframes pulseRing {
-  0%, 100% { box-shadow: 0 0 0 4px rgba(250, 238, 231, 0.2); }
-  50% { box-shadow: 0 0 0 10px rgba(250, 238, 231, 0.05); }
-}
-
-/* Estudos */
-.study-card {
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 18px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  margin-bottom: 12px;
-  transition: all 0.3s;
-}
-.study-card:hover {
-  transform: translateY(-2px);
-  border-color: var(--gold);
-}
-.study-cover {
-  height: 100px;
-  background: linear-gradient(135deg, var(--gold) 0%, #8B6F2C 100%);
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  padding: 16px;
-}
-.study-cover.v2 {
-  background: linear-gradient(135deg, var(--wine-mid) 0%, var(--wine-soft) 100%);
-}
-.study-cover::after {
-  content: '📖';
-  position: absolute;
-  top: 14px; right: 16px;
-  font-size: 24px;
-  opacity: 0.5;
-}
-.study-cover.v2::after { content: '✝'; font-size: 36px; opacity: 0.4; color: var(--peach); }
-.study-cover-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 16px;
-  font-weight: 600;
-  color: var(--peach);
-  letter-spacing: -0.01em;
-}
-.study-body { padding: 14px 16px; }
-.study-progress-bar {
-  height: 5px;
-  background: rgba(250, 238, 231, 0.1);
-  border-radius: 100px;
-  overflow: hidden;
-  margin-bottom: 10px;
-}
-.study-progress-fill {
-  height: 100%;
-  background: linear-gradient(90deg, var(--green-leaf), var(--green-deep));
-  border-radius: 100px;
-}
-.study-meta {
-  display: flex;
-  justify-content: space-between;
-  font-size: 11px;
-  color: rgba(250, 238, 231, 0.5);
-  font-family: 'JetBrains Mono', monospace;
-}
-.study-meta strong { color: var(--peach); font-family: 'Inter', sans-serif; font-style: normal; }
-
-/* Comunidades */
-.community-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin-top: 18px;
-}
-.community-tile {
-  background: rgba(0, 0, 0, 0.2);
-  border: 1px solid var(--line);
-  border-radius: 16px;
-  padding: 16px;
-  position: relative;
-  transition: all 0.3s;
-}
-.community-tile:hover {
-  transform: translateY(-3px);
-  border-color: var(--green-leaf);
-  background: rgba(168, 214, 114, 0.05);
-}
-.community-emoji { font-size: 26px; margin-bottom: 10px; }
-.community-name {
-  font-family: 'Playfair Display', serif;
-  font-size: 15px;
-  font-weight: 500;
-  margin-bottom: 6px;
-  letter-spacing: -0.01em;
-  color: var(--peach);
-}
-.community-members {
-  font-size: 11px;
-  color: rgba(250, 238, 231, 0.5);
-  font-family: 'JetBrains Mono', monospace;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.community-members::before {
-  content: '';
-  width: 6px; height: 6px;
-  background: var(--green-leaf);
-  border-radius: 50%;
-  display: inline-block;
-  box-shadow: 0 0 6px var(--green-leaf);
-}
-
-/* Sons */
-.sound-player {
-  background: rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  padding: 16px;
-  border: 1px solid var(--line);
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 10px;
-  transition: all 0.3s;
-}
-.sound-player:hover {
-  border-color: var(--green-leaf);
-  background: rgba(168, 214, 114, 0.04);
-}
-.sound-thumb {
-  width: 48px; height: 48px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, #2A4D1C, var(--green-deep));
-  display: grid;
-  place-items: center;
-  flex-shrink: 0;
-  font-size: 20px;
-}
-.sound-thumb.v3 { background: linear-gradient(135deg, var(--purple-soft), var(--purple)); }
-.sound-info { flex: 1; min-width: 0; }
-.sound-name {
-  font-family: 'Playfair Display', serif;
-  font-size: 15px;
-  font-weight: 500;
-  margin-bottom: 4px;
-  color: var(--peach);
-}
-.sound-cat {
-  font-size: 10px;
-  color: rgba(250, 238, 231, 0.5);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-family: 'JetBrains Mono', monospace;
-}
-.sound-wave {
-  display: flex;
-  gap: 3px;
-  align-items: flex-end;
-  height: 18px;
-}
-.wave-bar {
-  width: 3px;
-  background: var(--green-leaf);
-  border-radius: 100px;
-  animation: wave 1.2s ease-in-out infinite;
-}
-@keyframes wave {
-  0%, 100% { height: 30%; }
-  50% { height: 100%; }
-}
-.wave-bar:nth-child(2) { animation-delay: 0.1s; }
-.wave-bar:nth-child(3) { animation-delay: 0.2s; }
-.wave-bar:nth-child(4) { animation-delay: 0.3s; }
-.wave-bar:nth-child(5) { animation-delay: 0.4s; }
-
-@media (max-width: 1100px) {
-  .feature-card.large, .feature-card.medium { grid-column: span 12; min-height: 460px; }
-  .feature-card.small, .feature-card.wide { grid-column: span 6; }
-}
-@media (max-width: 700px) {
-  .features-section, .section { padding: 100px 20px; }
-  .feature-card { padding: 32px; }
-  .feature-card.small, .feature-card.wide, .feature-card.large, .feature-card.medium {
-    grid-column: span 12;
-    min-height: 380px;
-  }
-  .feature-card.large .feature-title { font-size: 32px; }
-  .feature-title { font-size: 28px !important; }
-}
-
-/* ============ HOW IT WORKS ============ */
-.how-section {
-  background: var(--peach);
-  color: var(--wine-deep);
-  padding: 180px 48px;
-  position: relative;
-  z-index: 2;
-  overflow: hidden;
-}
-.how-section .section-tag { color: var(--green-deep); }
-.how-section .section-title { color: var(--wine-deep); }
-.how-section .section-title .italic { color: var(--wine-mid); opacity: 1; }
-.how-section .section-sub { color: var(--ink-soft); }
-
-.steps {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
-  margin-top: 80px;
-}
-.step {
-  position: relative;
-  padding: 56px 40px;
-  border: 1px solid var(--line-light-strong);
-  border-radius: 28px;
-  background: var(--cream);
-  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-.step:hover {
-  border-color: var(--green-deep);
-  transform: translateY(-6px);
-  box-shadow: 0 30px 60px -20px rgba(91, 26, 26, 0.18);
-}
-.step-num {
-  font-family: 'Instrument Serif', serif;
-  font-style: italic;
-  font-size: 110px;
-  font-weight: 400;
-  color: var(--green-deep);
-  line-height: 1;
-  margin-bottom: 24px;
-  letter-spacing: -0.04em;
-}
-.step-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 32px;
-  font-weight: 500;
-  margin-bottom: 16px;
-  letter-spacing: -0.02em;
-  color: var(--wine-deep);
-}
-.step-desc {
-  color: var(--ink-soft);
-  font-size: 16px;
-  line-height: 1.55;
-}
-
-@media (max-width: 900px) {
-  .steps { grid-template-columns: 1fr; gap: 20px; }
-  .how-section { padding: 100px 20px; }
-}
-
-/* ============ FAITH JOURNEY (escuro) ============ */
-.journey-section {
-  padding: 180px 48px;
-  background: var(--wine-deep);
-  position: relative;
-  z-index: 2;
-  overflow: hidden;
-}
-.journey-section::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse 60% 40% at 50% 50%, rgba(168, 214, 114, 0.05), transparent 70%);
-}
-.journey-section .section-inner { position: relative; z-index: 1; }
-
-.journey-track {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin-top: 80px;
-  position: relative;
-  flex-wrap: wrap;
-  gap: 32px;
-  padding: 0 30px;
-}
-.journey-track::before {
-  content: '';
-  position: absolute;
-  top: 44px;
-  left: 8%;
-  right: 8%;
-  height: 1px;
-  background: repeating-linear-gradient(
-    90deg,
-    var(--peach-warm) 0px, var(--peach-warm) 8px,
-    transparent 8px, transparent 18px
-  );
-  opacity: 0.3;
-  z-index: 0;
-}
-
-.journey-stage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  flex: 1;
-  min-width: 130px;
-}
-.journey-icon {
-  width: 88px; height: 88px;
-  background: rgba(250, 238, 231, 0.05);
-  border: 1px solid var(--line-strong);
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 38px;
-  margin-bottom: 20px;
-  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-  backdrop-filter: blur(10px);
-}
-.journey-stage:hover .journey-icon {
-  border-color: var(--green-leaf);
-  background: rgba(168, 214, 114, 0.1);
-  transform: scale(1.12) rotate(-6deg);
-  box-shadow: 0 20px 40px rgba(168, 214, 114, 0.2);
-}
-.journey-name {
-  font-family: 'Playfair Display', serif;
-  font-size: 22px;
-  font-weight: 400;
-  letter-spacing: -0.01em;
-  margin-bottom: 8px;
-  color: var(--peach);
-}
-.journey-pts {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
-  color: rgba(250, 238, 231, 0.5);
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-}
-
-@media (max-width: 900px) {
-  .journey-section { padding: 100px 20px; }
-  .journey-track::before { display: none; }
-  .journey-track { justify-content: center; gap: 28px; padding: 0; }
-}
-
-/* ============ PROOF / STATS ============ */
-.proof-section {
-  padding: 180px 48px;
-  background: var(--peach);
-  color: var(--wine-deep);
-  position: relative;
-  z-index: 2;
-}
-.proof-section .section-tag { color: var(--green-deep); }
-.proof-section .section-title { color: var(--wine-deep); }
-.proof-section .section-title .italic { color: var(--wine-mid); opacity: 1; }
-
-.proof-grid {
-  max-width: 1500px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: center;
-}
-
-.testimonial-featured {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 32px;
-  align-items: start;
-}
-.testimonial-photo {
-  width: 160px;
-  height: 200px;
-  border-radius: 24px;
-  overflow: hidden;
-  position: relative;
-  flex-shrink: 0;
-}
-.testimonial-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: contrast(1.05);
-}
-.testimonial-photo::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border: 1px solid var(--line-light-strong);
-  border-radius: 24px;
-  pointer-events: none;
-}
-.big-quote {
-  font-family: 'Instrument Serif', serif;
-  font-style: italic;
-  font-weight: 400;
-  font-size: clamp(24px, 2.8vw, 36px);
-  line-height: 1.3;
-  letter-spacing: -0.015em;
-  margin-bottom: 28px;
-  color: var(--wine-deep);
-}
-.big-quote::before {
-  content: '"';
-  font-family: 'Playfair Display', serif;
-  font-size: 1.4em;
-  color: var(--green-deep);
-  font-style: normal;
-  font-weight: 500;
-  line-height: 0.5;
-  margin-right: 6px;
-  vertical-align: -0.2em;
-}
-.quote-author {
-  padding-top: 24px;
-  border-top: 1px solid var(--line-light-strong);
-}
-.author-name {
-  font-weight: 600;
-  font-size: 16px;
-  color: var(--wine-deep);
-  margin-bottom: 4px;
-}
-.author-role {
-  font-size: 13px;
-  color: var(--ink-muted);
-  font-family: 'JetBrains Mono', monospace;
-}
-
-.proof-stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 18px;
-}
-.proof-stat-card {
-  background: var(--cream);
-  border-radius: 24px;
-  padding: 36px 32px;
-  border: 1px solid var(--line-light);
-  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-.proof-stat-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 24px 40px -8px rgba(91, 26, 26, 0.15);
-  border-color: var(--green-deep);
-}
-.proof-stat-card.dark {
-  background: var(--wine-deep);
-  color: var(--peach);
-  border-color: transparent;
-}
-.proof-stat-card.dark .proof-stat-num { color: var(--green-leaf); }
-.proof-stat-card.dark .proof-stat-label { color: rgba(250,238,231,0.7); }
-.proof-stat-card.green {
-  background: linear-gradient(135deg, var(--green-deep), #4D7F28);
-  color: var(--cream);
-  border-color: transparent;
-}
-.proof-stat-card.green .proof-stat-num { color: var(--cream); }
-.proof-stat-card.green .proof-stat-label { color: rgba(255,255,255,0.85); }
-.proof-stat-num {
-  font-family: 'Playfair Display', serif;
-  font-size: 56px;
-  font-weight: 400;
-  letter-spacing: -0.035em;
-  line-height: 1;
-  color: var(--wine-deep);
-  margin-bottom: 14px;
-}
-.proof-stat-num small { font-size: 32px; font-style: italic; font-family: 'Instrument Serif', serif; }
-.proof-stat-label {
-  font-size: 13px;
-  color: var(--ink-muted);
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-@media (max-width: 900px) {
-  .proof-grid { grid-template-columns: 1fr; gap: 60px; }
-  .proof-section { padding: 100px 20px; }
-  .testimonial-featured { grid-template-columns: 1fr; gap: 24px; }
-  .testimonial-photo { width: 100%; height: 280px; max-width: 240px; }
-}
-
-/* ============ OBJEÇÕES SINCERAS ============ */
-.objections-section {
-  padding: 180px 48px;
-  background: var(--peach);
-  color: var(--wine-deep);
-  position: relative;
-  z-index: 2;
-}
-.objections-section .section-tag { color: var(--green-deep); }
-.objections-section .section-title { color: var(--wine-deep); }
-.objections-section .section-title .italic { color: var(--wine-mid); opacity: 1; }
-.objections-section .section-sub { color: var(--ink-soft); }
-
-.objections-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-  max-width: 1300px;
-  margin: 0 auto;
-}
-
-.objection-card {
-  background: var(--cream);
-  border: 1px solid var(--line-light);
-  border-radius: 24px;
-  padding: 36px;
-  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-  position: relative;
-}
-.objection-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--green-deep);
-  box-shadow: 0 24px 48px -12px rgba(38, 33, 92, 0.18);
-}
-.objection-card::before {
-  content: '?';
-  position: absolute;
-  top: 24px;
-  right: 28px;
-  font-family: 'Playfair Display', serif;
-  font-size: 64px;
-  font-weight: 400;
-  font-style: italic;
-  color: var(--green-deep);
-  opacity: 0.15;
-  line-height: 1;
-}
-
-.objection-q {
-  font-family: 'Instrument Serif', serif;
-  font-style: italic;
-  font-size: clamp(20px, 2vw, 24px);
-  line-height: 1.3;
-  color: var(--wine-deep);
-  margin-bottom: 18px;
-  padding-right: 48px;
-  letter-spacing: -0.005em;
-}
-
-.objection-a {
-  font-size: 16px;
-  line-height: 1.65;
-  color: var(--ink-soft);
-}
-.objection-a strong {
-  color: var(--green-deep);
-  font-weight: 600;
-}
-
-@media (max-width: 900px) {
-  .objections-section { padding: 100px 20px; }
-  .objections-grid { grid-template-columns: 1fr; gap: 18px; }
-  .objection-card { padding: 28px; }
-  .objection-q { padding-right: 36px; }
-}
-
-/* ============ FAQ (escuro) ============ */
-.faq-section {
-  padding: 180px 48px;
-  background: var(--wine-deep);
-  position: relative;
-  z-index: 2;
-}
-.faq-wrap { max-width: 1000px; margin: 0 auto; }
-.faq-list { margin-top: 60px; }
-.faq-item {
-  border-top: 1px solid var(--line);
-  padding: 32px 0;
-  cursor: pointer;
-  transition: padding 0.3s;
-}
-.faq-item:last-child { border-bottom: 1px solid var(--line); }
-.faq-item:hover { padding-left: 12px; }
-.faq-q {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 24px;
-  font-family: 'Playfair Display', serif;
-  font-size: 26px;
-  font-weight: 400;
-  letter-spacing: -0.02em;
-  color: var(--peach);
-}
-.faq-icon {
-  width: 38px; height: 38px;
-  border-radius: 50%;
-  background: rgba(250, 238, 231, 0.06);
-  border: 1px solid var(--line-strong);
-  color: var(--peach);
-  display: grid;
-  place-items: center;
-  font-size: 22px;
-  font-weight: 300;
-  transition: all 0.4s;
-  flex-shrink: 0;
-}
-.faq-item.open .faq-icon {
-  transform: rotate(45deg);
-  background: var(--green-leaf);
-  color: var(--wine-deep);
-  border-color: var(--green-leaf);
-}
-.faq-a {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease, margin 0.4s;
-  color: rgba(250, 238, 231, 0.7);
-  font-size: 17px;
-  line-height: 1.65;
-  max-width: 760px;
-}
-.faq-item.open .faq-a {
-  max-height: 400px;
-  margin-top: 20px;
-}
-@media (max-width: 700px) {
-  .faq-q { font-size: 20px; }
-  .faq-section { padding: 100px 20px; }
-}
-
-/* ============ CTA FINAL (cinematográfico) ============ */
-.cta-section {
-  padding: 200px 48px;
-  background: var(--void);
-  color: var(--peach);
-  position: relative;
-  overflow: hidden;
-  z-index: 2;
-}
-.cta-section::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse 80% 50% at 50% 30%, rgba(168, 214, 114, 0.18), transparent 60%),
-    radial-gradient(ellipse 60% 40% at 30% 90%, rgba(206, 203, 246, 0.18), transparent 60%),
-    radial-gradient(ellipse 50% 30% at 80% 70%, rgba(91, 42, 126, 0.25), transparent 60%);
-  z-index: 0;
-}
-.cta-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-}
-.cta-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 20px;
-  border: 1px solid var(--line-strong);
-  border-radius: 100px;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
-  font-weight: 500;
-  color: var(--peach-warm);
-  margin-bottom: 36px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  background: rgba(250,238,231,0.04);
-  backdrop-filter: blur(10px);
-}
-.cta-title {
-  font-family: 'Playfair Display', serif;
-  font-weight: 400;
-  font-size: clamp(48px, 8vw, 124px);
-  line-height: 0.95;
-  letter-spacing: -0.04em;
-  margin-bottom: 32px;
-  color: var(--peach);
-}
-.cta-title .italic {
-  font-family: 'Instrument Serif', serif;
-  font-style: italic;
-  background: linear-gradient(180deg, var(--green-leaf), var(--green-vivid));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.cta-sub {
-  font-size: 20px;
-  color: rgba(250,238,231,0.7);
-  margin-bottom: 56px;
-  max-width: 660px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.55;
-}
-.cta-buttons {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.btn-cta-primary {
-  background: var(--green-leaf);
-  color: var(--wine-deep);
-  padding: 22px 44px;
-  border-radius: 100px;
-  font-size: 17px;
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  gap: 14px;
-  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-  position: relative;
-  overflow: hidden;
-}
-.btn-cta-primary::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: var(--peach);
-  transform: translateY(100%);
-  transition: transform 0.4s;
-}
-.btn-cta-primary span { position: relative; z-index: 1; }
-.btn-cta-primary:hover::before { transform: translateY(0); }
-.btn-cta-primary:hover {
-  transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 30px 60px rgba(168,214,114,0.4);
-}
-.btn-cta-secondary {
-  border: 1px solid var(--line-strong);
-  padding: 22px 44px;
-  border-radius: 100px;
-  font-size: 17px;
-  font-weight: 500;
-  color: var(--peach);
-  transition: all 0.4s;
-  background: rgba(250,238,231,0.04);
-  backdrop-filter: blur(10px);
-}
-.btn-cta-secondary:hover {
-  border-color: var(--peach);
-  background: rgba(250,238,231,0.1);
-}
-.cta-meta {
-  margin-top: 48px;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 12px;
-  color: rgba(250,238,231,0.5);
-  display: flex;
-  gap: 28px;
-  justify-content: center;
-  flex-wrap: wrap;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-.cta-meta span { display: flex; align-items: center; gap: 8px; }
-.cta-meta span::before {
-  content: '✓';
-  color: var(--green-leaf);
-  font-weight: 700;
-}
-
-/* ============ FOOTER ============ */
-footer {
-  background: var(--void);
-  color: var(--peach-warm);
-  padding: 100px 48px 40px;
-  position: relative;
-  z-index: 2;
-  border-top: 1px solid var(--line);
-}
-.footer-grid {
-  max-width: 1500px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr;
-  gap: 80px;
-  margin-bottom: 80px;
-}
-.footer-brand p {
-  font-size: 15px;
-  color: rgba(250,238,231,0.55);
-  line-height: 1.65;
-  max-width: 360px;
-}
-.footer-col h4 {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--green-leaf);
-  margin-bottom: 22px;
-}
-.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 12px; }
-.footer-col a {
-  color: rgba(250,238,231,0.65);
-  font-size: 15px;
-  transition: color 0.3s, padding-left 0.3s;
-}
-.footer-col a:hover { color: var(--peach); padding-left: 4px; }
-
-.footer-contact-link {
-  display: inline-flex !important;
-  align-items: center;
-  gap: 10px;
-}
-.footer-contact-link:hover { padding-left: 0 !important; }
-.footer-contact-link:hover .footer-icon { color: var(--green-leaf); transform: scale(1.1); }
-.footer-icon {
-  flex-shrink: 0;
-  color: var(--green-leaf);
-  opacity: 0.85;
-  transition: color 0.3s, transform 0.3s;
-}
-
-.footer-bottom {
-  max-width: 1500px;
-  margin: 0 auto;
-  padding-top: 40px;
-  border-top: 1px solid var(--line);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  font-size: 13px;
-  color: rgba(250,238,231,0.4);
-  font-family: 'JetBrains Mono', monospace;
-}
-
-@media (max-width: 900px) {
-  footer { padding: 80px 20px 40px; }
-  .footer-grid { grid-template-columns: 1fr 1fr; gap: 50px; }
-}
-@media (max-width: 600px) {
-  .footer-grid { grid-template-columns: 1fr; gap: 40px; }
-}
-
-/* ============ REVEAL on scroll ============ */
-.reveal {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 1s cubic-bezier(0.65, 0, 0.35, 1), transform 1s cubic-bezier(0.65, 0, 0.35, 1);
-}
-.reveal.in {
-  opacity: 1;
-  transform: translateY(0);
-}
-.reveal.delay-1 { transition-delay: 0.1s; }
-.reveal.delay-2 { transition-delay: 0.2s; }
-.reveal.delay-3 { transition-delay: 0.3s; }
-
-/* prefers-reduced-motion */
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-  .hero-line-inner { transform: none; opacity: 1; }
-}
-</style>
+        body { background-color: #FAEEE7; scroll-behavior: smooth; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0px 20px 40px rgba(91, 42, 126, 0.05);
+        }
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.75);
+            box-shadow: 0px 25px 50px rgba(91, 42, 126, 0.08);
+            transform: translateY(-4px);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        @media (prefers-reduced-motion: no-preference) {
+            @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+            @keyframes floatImage { 0%, 100% { transform: translateY(0) scale(1.02); } 50% { transform: translateY(-12px) scale(1.02); } }
+            @keyframes meshMove { 0% { background-position: 0% 0%; } 50% { background-position: 100% 100%; } 100% { background-position: 0% 0%; } }
+            .animate-fade-up { opacity: 0; animation: fadeUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
+            .delay-100 { animation-delay: 100ms; } .delay-200 { animation-delay: 200ms; }
+            .delay-300 { animation-delay: 300ms; } .delay-400 { animation-delay: 400ms; }
+            .hero-img-animated { animation: floatImage 10s ease-in-out 1.2s infinite; }
+            .hero-mesh-bg {
+                background-image:
+                    radial-gradient(circle at 20% 20%, rgba(91, 42, 126, 0.15) 0%, transparent 40%),
+                    radial-gradient(circle at 80% 80%, rgba(194, 241, 138, 0.15) 0%, transparent 40%),
+                    radial-gradient(circle at 80% 20%, rgba(67, 14, 102, 0.1) 0%, transparent 40%),
+                    radial-gradient(circle at 20% 80%, rgba(167, 212, 113, 0.1) 0%, transparent 40%);
+                background-size: 200% 200%; animation: meshMove 20s ease infinite alternate;
+            }
+        }
+        .btn-glow-primary:hover { box-shadow: 0 10px 25px -5px rgba(67, 14, 102, 0.4); transform: scale(1.02) translateY(-2px); }
+        .btn-glow-secondary:hover { box-shadow: 0 10px 25px -5px rgba(67, 14, 102, 0.2); transform: scale(1.02) translateY(-2px); }
+    </style>
 </head>
-<body>
+<body class="font-body-md text-on-background selection:bg-secondary-container selection:text-on-secondary-container">
 
-<nav id="nav">
-  <a href="#" class="logo-mark">
-    <img src="logo.png" alt="Inspirar.app" />
-  </a>
-  <div class="nav-links">
-    <a href="#features">recursos</a>
-    <a href="#como-funciona">como funciona</a>
-    <a href="#jornada">jornada</a>
-    <a href="#faq">dúvidas</a>
-  </div>
-  <a href="https://app.inspirar.app" class="nav-cta">Começar grátis</a>
+<!-- Header -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 max-w-container-max mx-auto bg-transparent backdrop-blur-md">
+<div class="flex items-center gap-4">
+<img alt="inspirar.app logo" class="h-10 w-auto" src="logo.png"/>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-md text-label-md" href="#recursos">Recursos</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#caderno">Caderno com Deus</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#jornada">Jornada</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#duvidas">Dúvidas</a>
 </nav>
+<div class="flex items-center gap-4">
+<a href="https://app.inspirar.app" class="bg-primary text-on-primary px-6 py-3 rounded-full font-label-md text-label-md hover:opacity-80 transition-all duration-300 transform active:scale-95 shadow-lg">
+                Entrar
+            </a>
+</div>
+</header>
 
-<!-- ============ HERO ============ -->
-<section class="hero">
-  <div class="hero-grid">
-    <div class="hero-content">
-      <div class="hero-eyebrow">
-        <span class="pulse"></span>
-        Selecionada pelo SEBRAE — 9ª edição Start&UP
-      </div>
-
-      <h1 class="hero-title">
-        <span class="hero-line"><span class="hero-line-inner">Sua conexão</span></span>
-        <span class="hero-line"><span class="hero-line-inner italic">com Deus</span></span>
-        <span class="hero-line"><span class="hero-line-inner">em meio ao <span class="accent">caos da rotina.</span></span></span>
-      </h1>
-
-      <p class="hero-sub">
-        Devocionais que falam ao seu momento, mural de orações em comunidade, estudos bíblicos e adoração. O Inspirar transforma 5 minutos do seu dia em encontros profundos com Deus.
-      </p>
-
-      <div class="hero-ctas">
-        <a href="https://app.inspirar.app" class="btn-primary">
-          <span>Entrar no Beta gratuito</span>
-          <span class="arrow">→</span>
-        </a>
-        <a href="#como-funciona" class="btn-secondary">
-          <span class="play">▶</span>
-          Ver como funciona
-        </a>
-      </div>
-
-      <div class="hero-beta">
-        <div class="hero-beta-badge">
-          <span class="beta-dot"></span>
-          BETA ABERTO
-        </div>
-        <p class="hero-beta-text">
-          Construindo junto com mais de <strong>60 cristãos pioneiros</strong>.
-          Sua jornada também faz parte dessa história.
-        </p>
-      </div>
-    </div>
-
-    <div class="hero-visual">
-      <div class="hero-visual-quote">
-        <div class="hero-visual-quote-mark">"</div>
-        <p class="hero-visual-quote-text">
-          Tu me farás ver os caminhos da vida; na tua presença há plenitude de alegria.
-        </p>
-        <div class="hero-visual-quote-ref">SALMOS 16:11</div>
-      </div>
-    </div>
-  </div>
+<main class="pt-32">
+<!-- Hero -->
+<section class="relative min-h-[90vh] flex items-center px-margin-mobile md:px-margin-desktop mb-section-gap overflow-hidden bg-background">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 hero-mesh-bg opacity-60 z-0"></div>
+<img alt="Momento de devocional com Bíblia, café e celular" class="w-full h-full object-cover opacity-90 scale-105 hero-img-animated relative z-10 mix-blend-multiply" src="devocional-rotina.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent z-20"></div>
+</div>
+<div class="relative z-30 max-w-2xl">
+<span class="inline-block px-4 py-1.5 rounded-full bg-mist-green text-secondary font-label-sm text-label-sm mb-6 uppercase tracking-widest animate-fade-up delay-100">Selecionada pelo SEBRAE — Start&UP</span>
+<h1 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-primary leading-tight mb-8 animate-fade-up delay-200">
+                    Sua conexão com Deus <br class="hidden md:block"/> em meio ao caos da rotina
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 leading-relaxed max-w-xl animate-fade-up delay-300">
+                    Cinco minutos por dia que devolvem profundidade à sua fé. Devocional, oração, Caderno com Deus e adoração — feitos para o seu momento.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 animate-fade-up delay-400">
+<a href="https://app.inspirar.app" class="bg-primary text-on-primary px-10 py-5 rounded-full font-headline-md text-body-lg transition-all duration-300 btn-glow-primary text-center">
+                        Entrar no Beta gratuito
+                    </a>
+<a href="#recursos" class="border-2 border-primary text-primary px-10 py-5 rounded-full font-headline-md text-body-lg hover:bg-primary hover:text-on-primary transition-all duration-300 btn-glow-secondary text-center">
+                        Ver recursos
+                    </a>
+</div>
+<div class="mt-8 flex items-center gap-3 animate-fade-up delay-400">
+<span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-mist-green/60 text-secondary text-label-sm font-bold uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Beta aberto
+</span>
+<span class="text-on-surface-variant font-label-md text-label-md">Construindo junto com mais de <strong class="text-primary">60 cristãos pioneiros</strong>.</span>
+</div>
+</div>
 </section>
 
-<!-- ============ FEATURES ============ -->
-<section id="features" class="features-section">
-  <div class="section-inner">
-    <div class="section-header reveal">
-      <div class="section-tag">Recursos do app</div>
-      <h2 class="section-title">
-        Tudo que sua fé precisa,<br>
-        <span class="italic">sem fragmentação.</span>
-      </h2>
-      <p class="section-sub">
-        Pare de pular entre cinco apps diferentes. Inspirar reúne devocional, oração, comunidade, estudos e adoração em uma experiência cuidadosamente desenhada para a sua rotina espiritual.
-      </p>
-    </div>
-
-    <div class="features-grid">
-
-      <!-- KILLER FEATURE 1: Devocionais personalizados -->
-      <div class="feature-card large reveal">
-        <div class="feature-icon feature-icon-logo">
-          <img src="logo.png" alt="Inspirar" />
-        </div>
-        <div class="feature-meta">01 — Inspiração para o seu dia</div>
-        <h3 class="feature-title">Devocionais que conhecem <span class="italic">o seu coração.</span></h3>
-        <p class="feature-desc">
-          Conte como você está se sentindo — ansioso, em luto, grato, sobrecarregado — e receba uma palavra única, preparada especialmente para o seu momento. Não é genérico. É feito para você, hoje.
-        </p>
-        <div class="feature-visual">
-          <div class="devo-mockup">
-            <div class="devo-header">
-              <div class="devo-title">Como você está hoje?</div>
-              <div class="devo-day-badge"><span class="pulse-mini"></span>HOJE</div>
-            </div>
-            <div class="devo-emotion-row">
-              <span class="emotion-chip active">Ansiedade</span>
-              <span class="emotion-chip">Família</span>
-              <span class="emotion-chip">Gratidão</span>
-              <span class="emotion-chip">Cansaço</span>
-            </div>
-            <p class="devo-text">"Não andem ansiosos por coisa alguma. Em qualquer situação, apresentem suas petições a Deus, e a paz que excede todo entendimento guardará seus corações."</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- KILLER FEATURE 2: Mural de Orações -->
-      <div class="feature-card medium accent-warm reveal delay-1">
-        <div class="feature-icon">🙏</div>
-        <div class="feature-meta">02 — Mural de Orações</div>
-        <h3 class="feature-title">Você nunca <span class="italic">ora sozinho.</span></h3>
-        <p class="feature-desc">
-          Compartilhe seus pedidos. Interceda pelos pedidos dos outros. Veja em tempo real irmãos pelo Brasil clamando, agradecendo e celebrando respostas.
-        </p>
-        <div class="feature-visual">
-          <div class="prayer-list">
-            <div class="prayer-item">
-              <div class="prayer-avatar">F</div>
-              <div class="prayer-content">
-                <div class="prayer-name">Fátima P. <span class="prayer-level">Semeador</span></div>
-                <div class="prayer-text">"Por todos que compartilham conosco aqui"</div>
-              </div>
-            </div>
-            <div class="prayer-item">
-              <div class="prayer-avatar v2">M</div>
-              <div class="prayer-content">
-                <div class="prayer-name">Makely B. <span class="prayer-level">Aprendiz</span></div>
-                <div class="prayer-text">"Preciso amar minha irmã com o amor de Cristo"</div>
-              </div>
-            </div>
-            <div class="prayer-item">
-              <div class="prayer-avatar v3">E</div>
-              <div class="prayer-content">
-                <div class="prayer-name">Ero <span class="prayer-level">Mestre</span></div>
-                <div class="prayer-text">"Que tenhamos uma semana extraordinária!"</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- KILLER FEATURE 3: Espaço de Adoração -->
-      <div class="feature-card wide accent-purple reveal">
-        <div class="feature-icon">🎵</div>
-        <div class="feature-meta">03 — Espaço de Adoração</div>
-        <h3 class="feature-title">Sons que acalmam, <span class="italic">palavras que sustentam.</span></h3>
-        <p class="feature-desc">
-          Sons da Criação para focar e meditar. Meditações guiadas para dormir em paz. Louvores selecionados a cada dia. Sua trilha sonora espiritual.
-        </p>
-        <div class="feature-visual">
-          <div class="sound-player">
-            <div class="sound-thumb">🌧️</div>
-            <div class="sound-info">
-              <div class="sound-name">Chuva calma</div>
-              <div class="sound-cat">SONS DA CRIAÇÃO</div>
-            </div>
-            <div class="sound-wave">
-              <div class="wave-bar"></div>
-              <div class="wave-bar"></div>
-              <div class="wave-bar"></div>
-              <div class="wave-bar"></div>
-              <div class="wave-bar"></div>
-            </div>
-          </div>
-          <div class="sound-player">
-            <div class="sound-thumb v3">🌙</div>
-            <div class="sound-info">
-              <div class="sound-name">Meditar confiando em Deus</div>
-              <div class="sound-cat">SONO EM PAZ · 11 MIN</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- CARD RESUMO: outras funcionalidades unificadas -->
-      <div class="feature-card small reveal delay-1">
-        <div class="feature-icon">✨</div>
-        <div class="feature-meta">+ Tudo isso também</div>
-        <h3 class="feature-title">Mais ferramentas <span class="italic">para sua jornada.</span></h3>
-        <ul class="feature-bullets">
-          <li><strong>Estudos Bíblicos</strong> — cursos guiados em lições de 5 a 10 minutos</li>
-          <li><strong>Sequência diária</strong> — streaks com escudos automáticos para quando faltar</li>
-          <li><strong>Comunidades</strong> — grupos por tema, tradição e desafios da vida</li>
-          <li><strong>Bíblia completa</strong> — em duas traduções, com busca e marcadores</li>
-          <li><strong>Versículo do dia</strong> — uma palavra escolhida para o seu hoje</li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
+<!-- Features Bento Grid -->
+<section id="recursos" class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mb-section-gap">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-12 mb-12 text-center">
+<h2 class="font-headline-lg text-primary mb-4">Três formas de caminhar com Deus</h2>
+<p class="text-on-surface-variant font-body-lg max-w-2xl mx-auto">Simples como deve ser. Profundo como precisa ser. Ferramentas pensadas para o seu dia real.</p>
+</div>
+<div class="md:col-span-4 glass-card p-10 rounded-3xl flex flex-col items-start group">
+<div class="w-16 h-16 rounded-2xl bg-soft-lilac flex items-center justify-center mb-8 group-hover:bg-primary-container transition-colors duration-500">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary-container text-4xl">self_improvement</span>
+</div>
+<h3 class="font-headline-md text-primary mb-4">Devocional diário</h3>
+<p class="text-on-surface-variant font-body-md leading-relaxed">Conte como você está e receba uma palavra preparada para o seu momento — versículo, reflexão e oração em menos de cinco minutos.</p>
+</div>
+<div class="md:col-span-4 glass-card p-10 rounded-3xl flex flex-col items-start group">
+<div class="w-16 h-16 rounded-2xl bg-mist-green flex items-center justify-center mb-8 group-hover:bg-secondary-container transition-colors duration-500">
+<span class="material-symbols-outlined text-secondary group-hover:text-on-secondary-container text-4xl">volunteer_activism</span>
+</div>
+<h3 class="font-headline-md text-primary mb-4">Mural de Orações</h3>
+<p class="text-on-surface-variant font-body-md leading-relaxed">Você nunca ora sozinho. Compartilhe pedidos, interceda por irmãos pelo Brasil e celebre respostas em comunidade.</p>
+</div>
+<div class="md:col-span-4 glass-card p-10 rounded-3xl flex flex-col items-start group">
+<div class="w-16 h-16 rounded-2xl bg-tertiary-fixed flex items-center justify-center mb-8 group-hover:bg-tertiary-container transition-colors duration-500">
+<span class="material-symbols-outlined text-tertiary group-hover:text-on-tertiary-container text-4xl">music_note</span>
+</div>
+<h3 class="font-headline-md text-primary mb-4">Espaço de Adoração</h3>
+<p class="text-on-surface-variant font-body-md leading-relaxed">Sons da Criação, meditações guiadas e louvores selecionados. Sua trilha sonora espiritual para cada hora do dia.</p>
+</div>
+</div>
 </section>
 
-<!-- ============ HOW IT WORKS ============ -->
-<section id="como-funciona" class="how-section">
-  <div class="section-inner">
-    <div class="section-header reveal">
-      <div class="section-tag">Como funciona</div>
-      <h2 class="section-title">
-        Três passos simples<br>
-        para começar <span class="italic">hoje.</span>
-      </h2>
-      <p class="section-sub">
-        Sem fricção. Em menos de 60 segundos você está em frente a uma palavra preparada para o seu momento.
-      </p>
-    </div>
-
-    <div class="steps">
-      <div class="step reveal">
-        <div class="step-num">i.</div>
-        <div class="step-title">Crie sua conta</div>
-        <p class="step-desc">Entre com Google ou e-mail em segundos. Configuramos seu perfil e nível de fé inicial automaticamente.</p>
-      </div>
-      <div class="step reveal delay-1">
-        <div class="step-num">ii.</div>
-        <div class="step-title">Conte como está</div>
-        <p class="step-desc">Compartilhe brevemente seu momento. Devocionais, orações e palavras conversam com a sua vida real.</p>
-      </div>
-      <div class="step reveal delay-2">
-        <div class="step-num">iii.</div>
-        <div class="step-title">Cultive o hábito</div>
-        <p class="step-desc">5 minutos por dia. Streaks, missões e a comunidade caminham com você. A constância vira transformação.</p>
-      </div>
-    </div>
-  </div>
+<!-- Community Highlight -->
+<section class="relative bg-surface py-section-gap px-margin-mobile md:px-margin-desktop overflow-hidden">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="order-2 md:order-1 relative">
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-secondary-fixed/30 rounded-full blur-3xl animate-pulse"></div>
+<div class="rounded-3xl overflow-hidden shadow-2xl transform -rotate-2 hover:rotate-0 transition-transform duration-700">
+<img class="w-full h-auto object-cover" alt="Mãos entrelaçadas em oração ao lado de Bíblia aberta" src="oracao-maos.jpg"/>
+</div>
+</div>
+<div class="order-1 md:order-2">
+<h2 class="font-display-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-8">Uma comunidade que ora junto</h2>
+<p class="text-on-surface-variant font-body-lg mb-10 leading-relaxed">
+                        Não caminhamos sozinhos nesta jornada. O Inspirar é o ponto de encontro de cristãos que buscam algo mais profundo. Compartilhe seus pedidos, interceda pelos pedidos dos outros e veja em tempo real irmãos clamando, agradecendo e celebrando respostas.
+                    </p>
+<div class="flex items-center gap-6 mb-12">
+<div class="flex -space-x-4">
+<div class="w-12 h-12 rounded-full border-2 border-surface bg-primary-fixed flex items-center justify-center text-primary font-bold">A</div>
+<div class="w-12 h-12 rounded-full border-2 border-surface bg-secondary-fixed flex items-center justify-center text-secondary font-bold">M</div>
+<div class="w-12 h-12 rounded-full border-2 border-surface bg-tertiary-fixed flex items-center justify-center text-tertiary font-bold">S</div>
+<div class="w-12 h-12 rounded-full border-2 border-surface bg-soft-lilac flex items-center justify-center text-primary font-bold">+60</div>
+</div>
+<span class="text-on-surface-variant font-label-md">Mais de 60 pioneiros já caminham juntos</span>
+</div>
+<a href="https://app.inspirar.app" class="inline-flex items-center gap-3 text-secondary font-headline-md group">
+                        Entrar na comunidade
+                        <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
 </section>
 
-<!-- ============ FAITH JOURNEY ============ -->
-<section id="jornada" class="journey-section">
-  <div class="section-inner">
-    <div class="section-header reveal">
-      <div class="section-tag">Sua Jornada da Fé</div>
-      <h2 class="section-title">
-        Seu crescimento espiritual,<br>
-        <span class="italic">visível e celebrado.</span>
-      </h2>
-      <p class="section-sub">
-        Cada devocional, cada oração, cada estudo te aproxima do próximo nível. Conquistas reais para uma jornada eterna.
-      </p>
-    </div>
-
-    <div class="journey-track">
-      <div class="journey-stage reveal"><div class="journey-icon">🌱</div><div class="journey-name">Aprendiz</div><div class="journey-pts">0 pts</div></div>
-      <div class="journey-stage reveal delay-1"><div class="journey-icon">📖</div><div class="journey-name">Buscador</div><div class="journey-pts">2.500 pts</div></div>
-      <div class="journey-stage reveal delay-2"><div class="journey-icon">🌾</div><div class="journey-name">Semeador</div><div class="journey-pts">7.500 pts</div></div>
-      <div class="journey-stage reveal delay-3"><div class="journey-icon">🌳</div><div class="journey-name">Frutífero</div><div class="journey-pts">15.000 pts</div></div>
-      <div class="journey-stage reveal"><div class="journey-icon">🏆</div><div class="journey-name">Mestre</div><div class="journey-pts">30.000 pts</div></div>
-    </div>
-  </div>
+<!-- Devocional personalizado + depoimento -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-serene-cream">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row gap-20 items-center">
+<div class="flex-1">
+<span class="text-secondary font-label-sm uppercase tracking-widest mb-6 block">Devocional personalizado</span>
+<h2 class="font-display-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-8">Uma palavra para o seu momento</h2>
+<p class="text-on-surface-variant font-body-lg mb-12 leading-relaxed">
+                        Ansioso, grato, em luto, sobrecarregado. Conte como você está e receba uma palavra única, feita para o seu hoje — não genérica, não para todo mundo. Reserve cinco minutos para reconectar-se com Deus e com a sua paz interior.
+                    </p>
+<div class="glass-card p-8 rounded-2xl mb-8">
+<div class="flex gap-6 items-start">
+<span class="material-symbols-outlined text-secondary text-3xl">format_quote</span>
+<p class="italic text-on-surface font-body-lg">"O inspirar.app agora faz parte da minha rotina matinal."</p>
+</div>
+<div class="mt-6 flex items-center gap-4 px-14">
+<div class="w-10 h-10 rounded-full bg-soft-lilac flex items-center justify-center text-primary font-bold">L</div>
+<div>
+<p class="font-label-md text-primary">Laura Yane</p>
+<p class="text-label-sm text-on-surface-variant">Bancária · Pioneira do Beta</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex-1">
+<div class="relative group">
+<div class="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-[40px] blur-2xl group-hover:blur-3xl transition-all duration-500"></div>
+<img class="relative z-10 w-full h-auto rounded-[32px] shadow-2xl" alt="Mulher lendo livro devocional em ambiente sereno" src="leitura-fe.jpg"/>
+</div>
+</div>
+</div>
 </section>
 
-<!-- ============ OBJEÇÕES SINCERAS ============ -->
-<section id="duvidas-sinceras" class="objections-section">
-  <div class="section-inner">
-    <div class="section-header reveal">
-      <div class="section-tag">Falando o que ninguém fala</div>
-      <h2 class="section-title">
-        Suas dúvidas mais sinceras,<br>
-        <span class="italic">respondidas sem rodeios.</span>
-      </h2>
-      <p class="section-sub">
-        Sabemos exatamente o que passa pela sua cabeça antes de criar mais uma conta em mais um app. Vamos ser diretos.
-      </p>
-    </div>
-
-    <div class="objections-grid">
-      <div class="objection-card reveal">
-        <div class="objection-q">"É mais um app que vai me empurrar uma denominação?"</div>
-        <div class="objection-a">
-          <strong>Não. Somos cristãos.</strong> No seu perfil, você escolhe sua tradição entre seis opções amplas — Católica Romana, Protestante Histórica (Presbiteriana, Batista, Luterana, Metodista, Anglicana), Pentecostal Clássica (Assembleia, Quadrangular, Congregação Cristã), Neopentecostal/Carismática, Adventista do Sétimo Dia ou Não-denominacional. Se a sua tradição não estiver na lista, você pode descrever livremente em "Outra". O conteúdo se ajusta às suas escolhas — referências, abordagem e tom. Quem cuida da curadoria são teólogos de tradições diferentes.
-        </div>
-      </div>
-
-      <div class="objection-card reveal delay-1">
-        <div class="objection-q">"Vou ser bombardeada de notificação?"</div>
-        <div class="objection-a">
-          <strong>Você decide.</strong> Por padrão, mandamos 1 notificação por dia (seu devocional na hora que você escolher). Tudo o mais é opt-in. Pode desativar todas em um toque.
-        </div>
-      </div>
-
-      <div class="objection-card reveal delay-2">
-        <div class="objection-q">"O que vão fazer com as minhas orações?"</div>
-        <div class="objection-a">
-          <strong>Nada além do que você autorizar.</strong> Suas orações privadas ficam privadas — criptografadas e sem acesso por terceiros. No Mural, só vai público o que você marcar como público. Seguimos a LGPD à risca.
-        </div>
-      </div>
-
-      <div class="objection-card reveal">
-        <div class="objection-q">"Custa quanto depois?"</div>
-        <div class="objection-a">
-          <strong>Tudo essencial é gratuito para sempre.</strong> Devocional diário, mural de orações, estudos básicos, sons da criação, comunidades — sem cobrar. O Premium é opcional, com recursos avançados, e você só conhece se quiser.
-        </div>
-      </div>
-
-      <div class="objection-card reveal delay-1">
-        <div class="objection-q">"É americano traduzido ou é nacional?"</div>
-        <div class="objection-a">
-          <strong>100% brasileiro.</strong> Operado pela Inspirar Soluções em Tecnologia LTDA (CNPJ 66.326.453/0001-10). Conteúdo em português, contexto cultural brasileiro, suporte em português.
-        </div>
-      </div>
-
-      <div class="objection-card reveal delay-2">
-        <div class="objection-q">"E se eu desistir nas primeiras semanas?"</div>
-        <div class="objection-a">
-          <strong>Foi por isso que criamos os Escudos.</strong> Você ganha proteção automática para os dias que faltar — sua sequência não zera de uma vez. A jornada de fé é longa, e o app foi pensado para te acompanhar nela, não para te punir.
-        </div>
-      </div>
-    </div>
-  </div>
+<!-- Caderno com Deus -->
+<section id="caderno" class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row gap-20 items-center">
+<div class="flex-1 order-2 md:order-1">
+<div class="relative">
+<div class="absolute -inset-4 bg-primary/5 rounded-[40px] blur-2xl"></div>
+<img alt="Bíblia aberta com luz suave sobre a mesa" class="relative z-10 w-full h-auto rounded-[32px] shadow-xl object-cover" src="biblia-luz.jpg"/>
+</div>
+</div>
+<div class="flex-1 order-1 md:order-2">
+<span class="text-secondary font-label-sm uppercase tracking-widest mb-6 block">DIFERENCIAL EXCLUSIVO</span>
+<h2 class="font-display-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-8">Meu Caderno com Deus</h2>
+<p class="text-on-surface-variant font-body-lg mb-10 leading-relaxed">
+                Descubra o poder transformador da escrita espiritual. O Inspirar guia o hábito do "Caderno com Deus" — uma prática diária que traz clareza, alivia o peso do dia e aprofunda a sua intimidade com Ele, uma página de cada vez.
+            </p>
+<div class="border-l-4 border-secondary/30 pl-6 mb-10">
+<p class="italic text-primary font-headline-md">"A escrita é a geometria da alma."</p>
+</div>
+<a href="https://app.inspirar.app" class="inline-block bg-primary text-on-primary px-10 py-5 rounded-full font-headline-md text-body-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                Começar meu caderno
+            </a>
+</div>
+</div>
 </section>
 
-<!-- ============ FAQ ============ -->
-<section id="faq" class="faq-section">
-  <div class="faq-wrap">
-    <div class="section-header reveal">
-      <div class="section-tag">Perguntas frequentes</div>
-      <h2 class="section-title">
-        Tudo que você precisa saber<br>
-        <span class="italic">antes de começar.</span>
-      </h2>
-    </div>
-
-    <div class="faq-list reveal delay-1">
-      <div class="faq-item">
-        <div class="faq-q">O Inspirar é realmente gratuito?<span class="faq-icon">+</span></div>
-        <div class="faq-a">Sim. As funcionalidades essenciais — devocionais diários, mural de orações, estudos básicos, sons da criação e comunidade — são gratuitas para sempre. Há um plano Premium opcional com recursos avançados como devocionais ilimitados, comunidades premium e produção de conteúdo personalizado em áudio.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">O conteúdo respeita minha tradição teológica?<span class="faq-icon">+</span></div>
-        <div class="faq-a">Sim. Você pode definir sua tradição teológica no perfil (Católica, Evangélica Pentecostal, Reformada, Adventista, entre outras), e o conteúdo se ajusta em tom, referências bíblicas e abordagem doutrinária. Toda produção é revisada por curadores teológicos antes de ir ao ar.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">Meus dados de oração são privados?<span class="faq-icon">+</span></div>
-        <div class="faq-a">Total e completamente. Suas orações pessoais e momentos privados nunca são compartilhados. No mural de orações, você escolhe explicitamente o que torna público. Seguimos a LGPD à risca, com criptografia em trânsito e em repouso. Operados pela INSPIRAR SOLUÇÕES EM TECNOLOGIA LTDA, CNPJ 66.326.453/0001-10.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">Funciona no iPhone, Android e pelo navegador?<span class="faq-icon">+</span></div>
-        <div class="faq-a">Sim. O Inspirar é um Progressive Web App (PWA) — funciona perfeitamente em qualquer dispositivo com navegador moderno. Você pode adicioná-lo à tela inicial e usar como app nativo, com notificações push.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">E se eu perder a sequência?<span class="faq-icon">+</span></div>
-        <div class="faq-a">A vida real acontece. Por isso você ganha "Escudos de Sequência" automaticamente — eles preservam seu streak quando você falta um dia. A jornada de fé é maior do que números, mas a constância merece ser celebrada.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">Como vocês moderam o conteúdo da comunidade?<span class="faq-icon">+</span></div>
-        <div class="faq-a">Levamos isso a sério. Combinamos triagem em tempo real, lista de termos bloqueados em português, denúncias da comunidade revisadas em até 24h, sistema de bloqueio entre usuários e curadores humanos. O ambiente do Inspirar é seguro para conversas reais sobre fé.</div>
-      </div>
-    </div>
-  </div>
+<!-- Adoração (App showcase card roxo) -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop overflow-hidden">
+<div class="max-w-container-max mx-auto bg-primary rounded-[64px] p-12 md:p-24 relative flex flex-col md:flex-row gap-20 items-center overflow-hidden">
+<div class="absolute top-0 right-0 w-full h-full opacity-20 pointer-events-none">
+<div class="absolute -top-20 -right-20 w-96 h-96 bg-secondary rounded-full blur-3xl"></div>
+</div>
+<div class="flex-1 z-10">
+<h2 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-primary mb-8">Sons que acalmam, sempre com você</h2>
+<p class="text-on-primary-container font-body-lg mb-12 opacity-90">
+                        Sons da Criação para focar e meditar. Meditações guiadas para dormir em paz. Louvores curados a cada dia. Sua trilha sonora espiritual foi desenhada para ser uma extensão da sua fé, não mais uma distração no celular.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-2xl flex items-center gap-4 transition-all duration-300 backdrop-blur-md border border-white/20" href="https://app.inspirar.app">
+<span class="material-symbols-outlined text-3xl">devices</span>
+<div class="text-left">
+<p class="text-[10px] uppercase font-bold opacity-60">Acesse agora</p>
+<p class="text-lg font-bold">No navegador</p>
+</div>
+</a>
+<a class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-2xl flex items-center gap-4 transition-all duration-300 backdrop-blur-md border border-white/20" href="https://app.inspirar.app">
+<span class="material-symbols-outlined text-3xl">add_to_home_screen</span>
+<div class="text-left">
+<p class="text-[10px] uppercase font-bold opacity-60">Instale como</p>
+<p class="text-lg font-bold">App (PWA)</p>
+</div>
+</a>
+</div>
+</div>
+<div class="flex-1 relative flex justify-center">
+<div class="relative z-10 w-full max-w-[420px] transform hover:scale-105 transition-transform duration-700">
+<img alt="Senhora com fones de ouvido em momento de adoração" class="w-full h-auto rounded-[32px] shadow-2xl object-cover" src="adoracao-fones.jpg"/>
+</div>
+<div class="absolute -top-10 -left-10 w-24 h-24 bg-secondary-fixed rounded-full blur-2xl animate-bounce" style="animation-duration: 4s;"></div>
+<div class="absolute bottom-20 -right-10 w-32 h-32 bg-primary-fixed-dim rounded-full blur-3xl animate-pulse"></div>
+</div>
+</div>
 </section>
 
-<!-- ============ CTA FINAL ============ -->
-<section class="cta-section">
-  <div class="cta-inner">
-    <div class="cta-eyebrow">
-      <span>✦</span> Comece em menos de 60 segundos
-    </div>
-    <h2 class="cta-title">
-      Sua próxima palavra<br>
-      <span class="italic">já está esperando.</span>
-    </h2>
-    <p class="cta-sub">
-      Faça parte dos primeiros cristãos a construir essa caminhada com a gente. A história espiritual de milhares de brasileiros começa aqui — a sua também pode. Comece hoje, sem custo.
-    </p>
-    <div class="cta-buttons">
-      <a href="https://app.inspirar.app" class="btn-cta-primary">
-        <span>Criar minha conta grátis</span>
-        <span style="position: relative; z-index: 1;">→</span>
-      </a>
-      <a href="#features" class="btn-cta-secondary">Ver recursos</a>
-    </div>
-    <div class="cta-meta">
-      <span>Grátis para sempre</span>
-      <span>LGPD compliant</span>
-    </div>
-  </div>
+<!-- Jornada da Fé -->
+<section id="jornada" class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<span class="text-secondary font-label-sm uppercase tracking-widest mb-4 block">Jornada da fé</span>
+<h2 class="font-display-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Cinco níveis, uma vida inteira</h2>
+<p class="text-on-surface-variant font-body-lg max-w-2xl mx-auto">A constância transforma. Sua jornada começa aprendiz e amadurece com o tempo.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+<div class="text-center group">
+<div class="w-16 h-16 mx-auto mb-4 rounded-full bg-soft-lilac border-2 border-primary/20 flex items-center justify-center font-display-lg text-headline-md text-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">1</div>
+<p class="font-label-md text-primary font-bold">Aprendiz</p>
+<p class="text-label-sm text-on-surface-variant">Os primeiros passos</p>
+</div>
+<div class="text-center group">
+<div class="w-16 h-16 mx-auto mb-4 rounded-full bg-mist-green border-2 border-secondary/20 flex items-center justify-center font-display-lg text-headline-md text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-all duration-300">2</div>
+<p class="font-label-md text-primary font-bold">Buscador</p>
+<p class="text-label-sm text-on-surface-variant">Sede que aprofunda</p>
+</div>
+<div class="text-center group">
+<div class="w-16 h-16 mx-auto mb-4 rounded-full bg-tertiary-fixed border-2 border-tertiary/20 flex items-center justify-center font-display-lg text-headline-md text-tertiary group-hover:bg-tertiary group-hover:text-on-tertiary transition-all duration-300">3</div>
+<p class="font-label-md text-primary font-bold">Semeador</p>
+<p class="text-label-sm text-on-surface-variant">Frutos surgem</p>
+</div>
+<div class="text-center group">
+<div class="w-16 h-16 mx-auto mb-4 rounded-full bg-soft-lilac border-2 border-primary/20 flex items-center justify-center font-display-lg text-headline-md text-primary group-hover:bg-primary group-hover:text-on-primary transition-all duration-300">4</div>
+<p class="font-label-md text-primary font-bold">Frutífero</p>
+<p class="text-label-sm text-on-surface-variant">Vida que transborda</p>
+</div>
+<div class="text-center group">
+<div class="w-16 h-16 mx-auto mb-4 rounded-full bg-mist-green border-2 border-secondary/20 flex items-center justify-center font-display-lg text-headline-md text-secondary group-hover:bg-secondary group-hover:text-on-secondary transition-all duration-300">5</div>
+<p class="font-label-md text-primary font-bold">Mestre</p>
+<p class="text-label-sm text-on-surface-variant">Caminhante constante</p>
+</div>
+</div>
+</div>
 </section>
 
-<!-- ============ FOOTER ============ -->
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <div class="logo-mark">
-        <img src="logo.png" alt="Inspirar.app" />
-      </div>
-      <p>Espaço diário de conexão espiritual, oração e reflexão. Construindo uma rotina de fé que dura — uma palavra de cada vez.</p>
-    </div>
-    <div class="footer-col">
-      <h4>App</h4>
-      <ul>
-        <li><a href="#features">Recursos</a></li>
-        <li><a href="#como-funciona">Como funciona</a></li>
-        <li><a href="#jornada">Jornada da fé</a></li>
-        <li><a href="https://app.inspirar.app">Entrar no app</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Comunidade</h4>
-      <ul>
-        <li><a href="#">Comunidades</a></li>
-        <li><a href="#">Mural de orações</a></li>
-        <li><a href="#">Estudos bíblicos</a></li>
-        <li><a href="#">Programa de parceiros</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Contato</h4>
-      <ul>
-        <li>
-          <a href="mailto:suporte@inspirar.app" class="footer-contact-link">
-            <svg class="footer-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="4" width="20" height="16" rx="2"/>
-              <path d="M22 7l-10 6L2 7"/>
-            </svg>
-            <span>suporte@inspirar.app</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://instagram.com/inspirarapp" target="_blank" rel="noopener" class="footer-contact-link">
-            <svg class="footer-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="2" width="20" height="20" rx="5"/>
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-            </svg>
-            <span>@inspirarapp</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Legal</h4>
-      <ul>
-        <li><a href="https://app.inspirar.app/privacidade">Política de Privacidade</a></li>
-        <li><a href="https://app.inspirar.app/termos">Termos de Uso</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div>© 2026 INSPIRAR SOLUÇÕES EM TECNOLOGIA LTDA · CNPJ 66.326.453/0001-10</div>
-    <div>Feito com 💚 para Sua glória</div>
-  </div>
+<!-- Objeções sinceras -->
+<section id="duvidas" class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<span class="text-secondary font-label-sm uppercase tracking-widest mb-4 block">Falando o que ninguém fala</span>
+<h2 class="font-display-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">Suas dúvidas mais sinceras, sem rodeios</h2>
+<p class="text-on-surface-variant font-body-lg max-w-2xl mx-auto">Sabemos o que passa pela sua cabeça antes de criar mais uma conta em mais um app.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="glass-card p-8 rounded-3xl">
+<p class="font-headline-md text-primary mb-3">"Vão me empurrar uma denominação?"</p>
+<p class="text-on-surface-variant font-body-md leading-relaxed"><strong class="text-secondary">Não. Somos cristãos.</strong> Você escolhe sua tradição entre seis opções amplas — Católica Romana, Protestante Histórica, Pentecostal Clássica, Neopentecostal, Adventista ou Não-denominacional. Se a sua não estiver na lista, descreva livremente em "Outra".</p>
+</div>
+<div class="glass-card p-8 rounded-3xl">
+<p class="font-headline-md text-primary mb-3">"Vou ser bombardeada de notificação?"</p>
+<p class="text-on-surface-variant font-body-md leading-relaxed"><strong class="text-secondary">Você decide.</strong> Por padrão, 1 notificação por dia (seu devocional na hora que escolher). Todo o resto é opt-in. Pode desativar tudo em um toque.</p>
+</div>
+<div class="glass-card p-8 rounded-3xl">
+<p class="font-headline-md text-primary mb-3">"O que fazem com minhas orações?"</p>
+<p class="text-on-surface-variant font-body-md leading-relaxed"><strong class="text-secondary">Nada além do que você autorizar.</strong> Orações privadas ficam privadas e criptografadas. No Mural, só vai público o que você marcar. Seguimos a LGPD à risca.</p>
+</div>
+<div class="glass-card p-8 rounded-3xl">
+<p class="font-headline-md text-primary mb-3">"Custa quanto depois?"</p>
+<p class="text-on-surface-variant font-body-md leading-relaxed"><strong class="text-secondary">Tudo essencial é gratuito para sempre.</strong> Devocional, mural, estudos básicos, sons da criação e comunidades — sem cobrar. O Premium é opcional.</p>
+</div>
+<div class="glass-card p-8 rounded-3xl">
+<p class="font-headline-md text-primary mb-3">"É americano traduzido?"</p>
+<p class="text-on-surface-variant font-body-md leading-relaxed"><strong class="text-secondary">100% brasileiro.</strong> Operado pela Inspirar Soluções em Tecnologia LTDA (CNPJ 66.326.453/0001-10). Conteúdo em português, contexto brasileiro, suporte em português.</p>
+</div>
+<div class="glass-card p-8 rounded-3xl">
+<p class="font-headline-md text-primary mb-3">"E se eu desistir nas primeiras semanas?"</p>
+<p class="text-on-surface-variant font-body-md leading-relaxed"><strong class="text-secondary">Foi por isso que criamos os Escudos.</strong> Proteção automática para os dias que faltar — sua sequência não zera de uma vez. A jornada de fé é longa, e o app te acompanha nela.</p>
+</div>
+</div>
+</section>
+
+<!-- Final CTA -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop text-center relative">
+<div class="max-w-3xl mx-auto">
+<img alt="Inspirar" class="w-32 h-32 mx-auto mb-12 animate-float object-contain" src="logo.png"/>
+<h2 class="font-display-lg text-primary mb-8">Sua próxima palavra de Deus já está esperando</h2>
+<p class="text-on-surface-variant font-body-lg mb-12">
+                    Faça parte dos primeiros cristãos a construir essa caminhada com a gente. A história espiritual de milhares de brasileiros começa aqui — a sua também pode. Comece hoje, sem custo.
+                </p>
+<div class="flex justify-center">
+<a href="https://app.inspirar.app" class="bg-secondary text-on-secondary px-12 py-5 rounded-full font-headline-md text-body-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                        Criar minha conta grátis
+                    </a>
+</div>
+<div class="mt-8 flex justify-center gap-6 text-label-sm text-on-surface-variant uppercase tracking-wider">
+<span>✓ Grátis para sempre</span>
+<span>✓ LGPD</span>
+<span>✓ 100% brasileiro</span>
+</div>
+</div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="w-full py-section-gap px-margin-mobile md:px-margin-desktop bg-surface flex flex-col md:flex-row justify-between items-start gap-gutter border-t border-outline-variant">
+<div class="flex flex-col gap-4 items-start max-w-sm">
+<img alt="inspirar.app" class="h-10 w-auto" src="logo.png"/>
+<p class="font-body-md text-on-surface-variant">Espaço diário de conexão espiritual, oração e reflexão. Construindo uma rotina de fé que dura — uma palavra de cada vez.</p>
+<p class="font-label-sm text-label-sm text-on-surface-variant opacity-70 mt-2">© 2026 INSPIRAR SOLUÇÕES EM TECNOLOGIA LTDA · CNPJ 66.326.453/0001-10</p>
+</div>
+<div class="flex flex-wrap gap-16">
+<div class="flex flex-col gap-3">
+<h4 class="font-headline-md text-primary text-base mb-2">App</h4>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#recursos">Recursos</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#caderno">Caderno com Deus</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="#jornada">Jornada da fé</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="https://app.inspirar.app">Entrar no app</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-headline-md text-primary text-base mb-2">Contato</h4>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md flex items-center gap-2" href="mailto:suporte@inspirar.app"><span class="material-symbols-outlined text-lg">mail</span> suporte@inspirar.app</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md flex items-center gap-2" href="https://instagram.com/inspirarapp" target="_blank" rel="noopener"><span class="material-symbols-outlined text-lg">photo_camera</span> @inspirarapp</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-headline-md text-primary text-base mb-2">Legal</h4>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="https://app.inspirar.app/privacidade">Política de Privacidade</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-md text-label-md" href="https://app.inspirar.app/termos">Termos de Uso</a>
+</div>
+</div>
 </footer>
 
-<!-- ============ INTERACTIVITY ============ -->
 <script>
-// Nav scroll effect
-const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 30);
-});
-
-// FAQ
-document.querySelectorAll('.faq-item').forEach(item => {
-  item.addEventListener('click', () => {
-    document.querySelectorAll('.faq-item').forEach(i => {
-      if (i !== item) i.classList.remove('open');
-    });
-    item.classList.toggle('open');
-  });
-});
-
-// Reveal on scroll
-const reveals = document.querySelectorAll('.reveal');
-const io = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.classList.add('in');
-      io.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.12, rootMargin: '0px 0px -80px 0px' });
-reveals.forEach(r => io.observe(r));
-</script>
-
-</body>
-</html>
+        document.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-serene-cream/80', 'shadow-sm');
+                header.classList.remove('bg-transparent');
+            } else {
+                header.classList.remove('bg-serene-cream/80', 'shadow-sm');
+                header.classList.add('bg-transparent');
+            }
+        });
+        const badge = document.querySelector('.animate-float');
+        if (badge) {
+            let angle = 0;
+            setInterval(() => { angle += 0.05; badge.style.transform = `translateY(${Math.sin(angle) * 10}px)`; }, 16);
+        }
+    </script>
+</body></html>
