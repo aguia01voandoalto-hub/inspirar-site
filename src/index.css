@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --color-creme: #faeee7;
+  --color-roxo: #430e66;
+  --color-noite: #1c1222;
+  --color-dourado: #c9a85f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-creme font-sans font-light text-roxo antialiased;
+}
+
+.font-serif {
+  font-optical-sizing: auto;
+}
+
+::selection {
+  background: var(--color-dourado);
+  color: var(--color-noite);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-dourado);
+  outline-offset: 4px;
+  border-radius: 2px;
+}

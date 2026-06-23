@@ -1,0 +1,17 @@
+# Dependências e build
+node_modules
+dist
+dist-server
+
+# Vercel
+.vercel
+
+# Variáveis de ambiente (segredos) — NUNCA versionar
+.env
+.env.*
+!.env.example
+
+# Logs e SO
+*.log
+.DS_Store
+Thumbs.db
