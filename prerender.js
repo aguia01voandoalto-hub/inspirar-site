@@ -139,7 +139,7 @@ if (!fs.existsSync(blogTemplatePath)) {
         dados,
         title: pagina === 1 ? 'Blog — inspirar.app' : `Blog (página ${pagina}) — inspirar.app`,
         description:
-          'Subsídios pra sua reflexão: textos curtos que ajudam você a responder, com o coração, as perguntas do seu tempo com Deus.',
+          'Reflexões diárias sobre a Palavra de Deus pra nutrir seu coração, trazer paz e aproximar você dEle. Cresça na fé — uma palavra de cada vez.',
         canonical,
         ogType: 'website',
       }),

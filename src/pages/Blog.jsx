@@ -104,7 +104,7 @@ function Card({ post, eager = false }) {
               “{post.versiculo}”
             </p>
             {post.ref && (
-              <p className={`mt-2 text-[11px] tracking-[0.25em] uppercase ${c.ref}`}>
+              <p className={`mt-2 text-xs font-semibold tracking-[0.2em] uppercase [text-shadow:0_1px_3px_#1c1222b3] ${c.ref}`}>
                 {post.ref}
               </p>
             )}
@@ -152,7 +152,7 @@ function Destaque({ post }) {
             </p>
           )}
           {post.ref && (
-            <p className={`mt-3 text-[11px] tracking-[0.3em] uppercase ${c.ref}`}>
+            <p className={`mt-3 text-xs font-semibold tracking-[0.25em] uppercase [text-shadow:0_1px_3px_#1c1222b3] ${c.ref}`}>
               {post.ref} · Destaque
             </p>
           )}
@@ -216,15 +216,15 @@ export function BlogIndex({ posts = [], pagina = 1, totalPaginas = 1 }) {
       <BlogHeader />
 
       <section className="mx-auto max-w-6xl px-6 pt-16 pb-10 md:px-10 md:pt-24">
-        <p className="text-[11px] font-medium tracking-[0.3em] text-dourado uppercase">
+        <p className="text-sm font-semibold tracking-[0.25em] text-dourado-escuro uppercase md:text-base">
           Blog do inspirar
         </p>
         <h1 className="mt-5 max-w-2xl font-serif text-4xl leading-[1.05] text-roxo md:text-6xl">
-          Subsídios pra sua reflexão.
+          Fé que cresce com você.
         </h1>
         <p className="mt-6 max-w-xl text-lg leading-relaxed text-roxo/70">
-          Textos curtos que ajudam você a responder, com o coração, as perguntas
-          do seu tempo com Deus — uma palavra de cada vez.
+          Reflexões diárias sobre a Palavra pra nutrir seu coração, trazer paz e
+          aproximar você de Deus — uma palavra de cada vez.
         </p>
       </section>
 
@@ -233,7 +233,7 @@ export function BlogIndex({ posts = [], pagina = 1, totalPaginas = 1 }) {
           <div className="rounded-3xl border border-roxo/10 bg-white/50 px-8 py-20 text-center">
             <p className="font-serif text-2xl font-light text-roxo">Em breve.</p>
             <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-roxo/60">
-              Os primeiros subsídios estão a caminho. Enquanto isso, comece sua
+              As primeiras reflexões estão a caminho. Enquanto isso, comece sua
               jornada no app.
             </p>
           </div>
@@ -248,7 +248,7 @@ export function BlogIndex({ posts = [], pagina = 1, totalPaginas = 1 }) {
 
           <section className="mx-auto max-w-6xl px-6 pt-14 md:px-10">
             <div className="flex items-baseline justify-between border-b border-roxo/10 pb-4">
-              <h2 className="font-serif text-2xl text-roxo">Últimos subsídios</h2>
+              <h2 className="font-serif text-2xl text-roxo">Últimas reflexões</h2>
               <span className="text-xs tracking-wide text-roxo/50">Atualizado todo dia</span>
             </div>
 
@@ -298,7 +298,7 @@ export function BlogPost({ post }) {
                 </p>
               )}
               {post.ref && (
-                <p className={`mt-3 text-[11px] tracking-[0.3em] uppercase ${c.ref}`}>{post.ref}</p>
+                <p className={`mt-3 text-sm font-semibold tracking-[0.25em] uppercase [text-shadow:0_1px_3px_#1c1222b3] ${c.ref}`}>{post.ref}</p>
               )}
             </div>
           </div>
@@ -306,8 +306,11 @@ export function BlogPost({ post }) {
       </section>
 
       <article className="mx-auto max-w-2xl px-6 pt-10 md:px-0">
-        <a href="/blog" className="text-sm text-roxo/60 transition-colors hover:text-roxo">
-          &larr; Todos os subsídios
+        <a
+          href="/blog"
+          className="inline-flex min-h-11 items-center gap-2 rounded-full border border-roxo/20 px-5 py-2.5 text-base font-medium text-roxo transition-colors hover:bg-roxo/5"
+        >
+          <span aria-hidden="true">&larr;</span> Todos os subsídios
         </a>
 
         {post.data && (
@@ -324,6 +327,10 @@ export function BlogPost({ post }) {
           className="mt-10 border-t border-roxo/10 pt-10"
           dangerouslySetInnerHTML={{ __html: post.corpo_html || '' }}
         />
+
+        <p className="mt-10 text-right font-serif text-lg italic text-roxo/70">
+          Equipe Inspirar.
+        </p>
       </article>
 
       <ChamadaApp />
