@@ -1,6 +1,10 @@
 import { motion } from 'framer-motion'
 import { Reveal } from '../components/Reveal.jsx'
-import ListaEspera from '../components/ListaEspera.jsx'
+import BadgesLojas from '../components/BadgesLojas.jsx'
+
+// CTA final da home — "assinar-primeiro": leva à contratação (/assinar) e ao
+// download. Substituiu a antiga lista de espera ("cadastros fechados"), que era
+// linguagem de pré-lançamento e travava a conversão.
 
 export default function MomentoMarca() {
   return (
@@ -24,7 +28,31 @@ export default function MomentoMarca() {
             </p>
           </Reveal>
           <Reveal delay={0.3}>
-            <ListaEspera />
+            <div className="mt-8 max-w-xl">
+              <p className="font-serif text-2xl font-light leading-snug text-creme md:text-3xl">
+                Comece hoje a sua caminhada com Deus.
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-creme/60">
+                Assine, baixe o app e comece agora — a partir de{' '}
+                <strong className="text-creme/80">R$ 14,90/mês</strong> no plano anual.
+              </p>
+
+              <div className="mt-8">
+                <a
+                  href="#planos"
+                  className="inline-block rounded-full bg-dourado px-8 py-4 text-center text-sm font-medium tracking-wide text-noite transition-[filter] duration-300 hover:brightness-110"
+                >
+                  Assinar agora →
+                </a>
+              </div>
+
+              <p className="mt-6 text-xs tracking-wide text-creme/50">
+                Já disponível nas duas lojas · cancele quando quiser
+              </p>
+              <div className="mt-3">
+                <BadgesLojas className="h-12" center={false} />
+              </div>
+            </div>
           </Reveal>
         </div>
       </div>

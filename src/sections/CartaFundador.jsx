@@ -53,11 +53,12 @@ export default function CartaFundador() {
               </p>
               <p>
                 Se você chegou até aqui, talvez essa inquietação também seja
-                sua. O inspirar.app está nascendo agora, e quem chega primeiro
-                não é só usuário: é pioneiro. Cada devocional, cada oração e
-                cada detalhe do app vai ser moldado junto com você. Esse é o
-                meu compromisso — construir, com calma e com propósito, um
-                lugar onde sobra espaço para Deus.
+                sua. O inspirar.app está no ar — na Google Play e no seu
+                navegador — e já faz parte da manhã de quem caminha com a
+                gente. Cada devocional, cada oração e cada detalhe continua
+                sendo moldado junto com quem usa. Esse é o meu compromisso —
+                construir, com calma e com propósito, um lugar onde sobra
+                espaço para Deus.
               </p>
             </div>
 

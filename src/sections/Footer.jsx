@@ -1,4 +1,7 @@
+import { diaDosPaisAtivo } from '../lib/campanhas.js'
+
 export default function Footer() {
+  const pais = diaDosPaisAtivo()
   return (
     <footer className="border-t border-creme/10 bg-noite px-6 py-16 md:px-12">
       <div className="mx-auto max-w-6xl">
@@ -22,6 +25,26 @@ export default function Footer() {
               App
             </h4>
             <ul className="mt-5 space-y-3 text-sm text-creme/60">
+              <li>
+                <a
+                  href="/assinar"
+                  className="font-medium text-dourado transition-colors hover:brightness-125"
+                >
+                  Assinar
+                </a>
+              </li>
+              <li>
+                <a href="/presente" className="transition-colors hover:text-creme">
+                  Presentear
+                </a>
+              </li>
+              {pais && (
+                <li>
+                  <a href="/pais" className="transition-colors hover:text-creme">
+                    🎁 Dia dos Pais
+                  </a>
+                </li>
+              )}
               <li>
                 <a href="#manifesto" className="transition-colors hover:text-creme">
                   Manifesto

@@ -5,9 +5,13 @@ import CardsDeUso from './sections/CardsDeUso.jsx'
 import FraseGigante from './sections/FraseGigante.jsx'
 import Depoimentos from './sections/Depoimentos.jsx'
 import CartaFundador from './sections/CartaFundador.jsx'
+import ComecarHoje from './sections/ComecarHoje.jsx'
+import Presentear from './sections/Presentear.jsx'
 import MomentoMarca from './sections/MomentoMarca.jsx'
 import Footer from './sections/Footer.jsx'
 import PaginaLegal from './pages/PaginaLegal.jsx'
+import BarraAnuncio from './components/BarraAnuncio.jsx'
+import BarraAssinar from './components/BarraAssinar.jsx'
 
 // Rotas de página usam o formato "#/rota" para não conflitar com as
 // âncoras de seção ("#manifesto", "#carta" etc.).
@@ -39,14 +43,18 @@ export default function App() {
 
   return (
     <main>
+      <BarraAnuncio />
       <Hero />
       <Manifesto />
       <CardsDeUso />
       <FraseGigante />
       <Depoimentos />
       <CartaFundador />
+      <ComecarHoje />
+      <Presentear />
       <MomentoMarca />
       <Footer />
+      <BarraAssinar />
     </main>
   )
 }

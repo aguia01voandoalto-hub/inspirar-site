@@ -38,7 +38,7 @@ export default function Hero() {
           />
         </motion.a>
         <motion.a
-          href="#comecar"
+          href="#planos"
           className="rounded-full bg-dourado px-5 py-2.5 text-xs font-medium tracking-widest text-noite uppercase transition-[filter] duration-300 hover:brightness-110"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -74,7 +74,7 @@ export default function Hero() {
           </motion.p>
 
           <motion.a
-            href="#comecar"
+            href="#planos"
             className="mt-10 inline-block rounded-full bg-dourado px-8 py-4 text-sm font-medium tracking-wide text-noite transition-[filter] duration-300 hover:brightness-110"
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}

@@ -1,4 +1,5 @@
 import Footer from '../sections/Footer.jsx'
+import BarraAnuncio from '../components/BarraAnuncio.jsx'
 
 // ─── Infra de capa (foto do banco ou bloco de cor como fallback) ─────────────
 
@@ -24,6 +25,9 @@ function capaInfo(post) {
 
 function BlogHeader() {
   return (
+    <>
+    {/* Barra de campanha rola junto; só o header abaixo é sticky. */}
+    <BarraAnuncio />
     <header className="sticky top-0 z-20 border-b border-roxo/10 bg-creme/85 backdrop-blur-sm">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 md:px-10">
         <a href="/" className="inline-block">
@@ -47,6 +51,7 @@ function BlogHeader() {
         </nav>
       </div>
     </header>
+    </>
   )
 }
 

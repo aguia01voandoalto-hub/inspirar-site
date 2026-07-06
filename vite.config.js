@@ -12,6 +12,8 @@ const cleanUrls = {
       const caminho = (req.url || '').split('?')[0]
       if (caminho === '/pais' || caminho === '/pais/') req.url = '/pais.html'
       if (caminho === '/presente' || caminho === '/presente/') req.url = '/presente.html'
+      if (caminho === '/assinar' || caminho === '/assinar/') req.url = '/assinar.html'
+      if (caminho === '/obrigado' || caminho === '/obrigado/') req.url = '/obrigado.html'
       // Blog: índice e posts (/blog, /blog/<slug>) servem o mesmo entry; o
       // cliente resolve o conteúdo pela URL (em dev, busca no Supabase).
       if (caminho === '/blog' || caminho === '/blog/' || caminho.startsWith('/blog/')) {
@@ -30,6 +32,8 @@ export default defineConfig({
         main: fileURLToPath(new URL('./index.html', import.meta.url)),
         pais: fileURLToPath(new URL('./pais.html', import.meta.url)),
         presente: fileURLToPath(new URL('./presente.html', import.meta.url)),
+        assinar: fileURLToPath(new URL('./assinar.html', import.meta.url)),
+        obrigado: fileURLToPath(new URL('./obrigado.html', import.meta.url)),
         blog: fileURLToPath(new URL('./blog.html', import.meta.url)),
       },
     },

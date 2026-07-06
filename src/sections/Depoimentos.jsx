@@ -12,7 +12,7 @@ const DEPOIMENTOS = [
     cidade: 'Brasília, DF',
     texto:
       'Acordo, abro o inspirar.app e o dia muda de tom. Virou o meu primeiro café da manhã.',
-    data: 'Pioneira desde 2025',
+    data: 'No inspirar.app desde 2025',
     foto: '/prints/laura-yane.jpg',
   },
   {
@@ -20,7 +20,7 @@ const DEPOIMENTOS = [
     cidade: 'Cuiabá, MT',
     texto:
       'O aplicativo hoje faz parte da minha rotina, faço questão de usar todos os dias.',
-    data: 'Pioneiro desde 2025',
+    data: 'No inspirar.app desde 2025',
     foto: '/prints/rerison-rodrigo.jpg',
   },
   {
@@ -28,14 +28,14 @@ const DEPOIMENTOS = [
     cidade: 'Cuiabá, MT',
     texto:
       'Ao chegar na academia, a primeira coisa que faço é ouvir os áudios do dia. Não começo o dia sem o inspirar.app.',
-    data: 'Pioneira desde 2025',
+    data: 'No inspirar.app desde 2025',
     foto: '/prints/makely-babora.jpg',
   },
 ]
 
 export default function Depoimentos({
-  kicker = 'Vozes dos pioneiros',
-  titulo = 'Quem chegou primeiro já mudou o tom dos seus dias.',
+  kicker = 'Quem já caminha com a gente',
+  titulo = 'Histórias de quem mudou o tom dos seus dias.',
 }) {
   return (
     <section
