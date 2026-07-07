@@ -47,7 +47,7 @@ export default function Apresentacao() {
             Apresentando o inspirar.app
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-3xl font-light leading-snug text-roxo md:text-5xl">
-            Alguns minutos por dia que mudam o seu dia inteiro.
+            Um encontro diário com Deus que muda o seu dia inteiro.
           </h2>
         </Reveal>
 

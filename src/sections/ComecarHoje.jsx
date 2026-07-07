@@ -47,7 +47,7 @@ export default function ComecarHoje() {
           </p>
           <h2 className="mt-6 max-w-2xl font-serif text-3xl font-light leading-snug text-roxo md:text-5xl">
             Do primeiro clique à primeira oração,{' '}
-            <em className="text-dourado">em minutos.</em>
+            <em className="text-dourado">hoje mesmo.</em>
           </h2>
         </Reveal>
 

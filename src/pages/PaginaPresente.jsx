@@ -345,7 +345,7 @@ export default function PaginaPresente() {
               Dentro do presente
             </p>
             <h2 className="mt-6 max-w-2xl font-serif text-3xl font-light leading-snug text-creme md:text-5xl">
-              Cinco minutos por dia que mudam o tom do dia inteiro.
+              Um encontro diário com Deus que muda o tom do dia inteiro.
             </h2>
           </Reveal>
 

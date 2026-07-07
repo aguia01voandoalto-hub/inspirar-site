@@ -45,9 +45,9 @@ export default function CartaFundador() {
               <p>
                 Eu não queria criar mais um aplicativo disputando a sua
                 atenção. Queria o contrário: usar a tecnologia para devolver o
-                que ela mesma tomou. Acredito que alguns minutos de presença
+                que ela mesma tomou. Acredito que um espaço de presença
                 real diante de Deus — uma palavra lida com calma, uma oração
-                escrita à mão, um pedido levado por um irmão — mudam o tom do
+                escrita à mão, um pedido levado por um irmão — muda o tom do
                 dia inteiro. O inspirar.app existe para guardar esse espaço na
                 sua rotina.
               </p>
