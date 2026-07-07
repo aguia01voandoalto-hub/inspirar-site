@@ -260,6 +260,10 @@ export default function PaginaAssinar() {
                 Veja os planos de presente →
               </a>
             </p>
+            <p className="mt-2 text-center text-sm text-roxo/60">
+              ✝️ Conteúdo com cuidado teológico — Pr. Pesset, Mestre em Teologia
+              (PUC-Rio)
+            </p>
             <div className="mt-6">
               <BadgesLojas className="h-12" />
             </div>

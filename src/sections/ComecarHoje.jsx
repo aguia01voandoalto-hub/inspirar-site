@@ -129,6 +129,12 @@ export default function ComecarHoje() {
                 Veja os planos de presente →
               </a>
             </p>
+            <p className="mt-2 text-xs text-roxo/55">
+              ✝️ Conteúdo com cuidado teológico —{' '}
+              <a href="#carta" className="underline decoration-dourado/60 underline-offset-2 hover:text-roxo">
+                Pr. Pesset, Mestre em Teologia (PUC-Rio)
+              </a>
+            </p>
             <div className="mt-6">
               <BadgesLojas className="h-12" />
             </div>

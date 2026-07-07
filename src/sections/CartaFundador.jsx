@@ -11,7 +11,7 @@ export default function CartaFundador() {
       <div className="relative mx-auto max-w-6xl">
         <Reveal>
           <p className="text-xs font-medium tracking-[0.3em] text-dourado uppercase">
-            Carta do fundador
+            Quem está por trás
           </p>
           <h2 className="mt-6 max-w-3xl font-serif text-3xl font-light leading-snug text-creme md:text-5xl">
             O inspirar.app é um propósito{' '}
@@ -72,6 +72,44 @@ export default function CartaFundador() {
             </div>
           </Reveal>
         </div>
+
+        {/* Co-fundador — a autoridade teológica do projeto. Padrão
+            "construtor + especialista": o Ero conta a origem; o Pr. Pesset
+            responde pela fidelidade bíblica do conteúdo. */}
+        <Reveal delay={0.15}>
+          <div className="mt-16 grid items-center gap-8 rounded-3xl border border-dourado/25 bg-dourado/5 p-8 md:mt-24 md:grid-cols-[1fr_1.9fr] md:gap-12 md:p-10">
+            <div className="relative">
+              <RevealImage
+                src="/prints/pesset.jpg"
+                alt="Pr. Pesset com a família"
+                className="aspect-[4/3] rounded-2xl ring-1 ring-creme/15"
+              />
+              <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-t from-noite/40 via-transparent to-transparent" />
+            </div>
+            <div>
+              <p className="text-xs font-medium tracking-[0.3em] text-dourado uppercase">
+                Cuidado teológico
+              </p>
+              <blockquote className="mt-5 font-serif text-xl font-light italic leading-relaxed text-creme md:text-2xl">
+                “Meu compromisso aqui é um só: zelar para que cada palavra seja
+                fiel às Escrituras e aponte sempre para Cristo.”
+              </blockquote>
+              <div className="mt-7 border-t border-dourado/40 pt-6">
+                <p className="font-serif text-2xl font-light italic text-creme">
+                  Pr. Pesset
+                </p>
+                <p className="mt-2 text-xs font-medium tracking-[0.3em] text-dourado uppercase">
+                  Co-fundador · Cuidado teológico
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-creme/60">
+                  Mestre em Teologia Sistemático-Pastoral (PUC-Rio) e doutorando
+                  em Teologia. Pastor titular da Segunda Igreja Batista em
+                  Rondonópolis-MT e docente nacional do Instituto Haggai.
+                </p>
+              </div>
+            </div>
+          </div>
+        </Reveal>
       </div>
     </section>
   )
