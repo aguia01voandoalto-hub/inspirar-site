@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import Hero from './sections/Hero.jsx'
 import Manifesto from './sections/Manifesto.jsx'
 import CardsDeUso from './sections/CardsDeUso.jsx'
+import Ecossistema from './sections/Ecossistema.jsx'
 import FraseGigante from './sections/FraseGigante.jsx'
 import Depoimentos from './sections/Depoimentos.jsx'
 import CartaFundador from './sections/CartaFundador.jsx'
@@ -47,6 +48,7 @@ export default function App() {
       <Hero />
       <Manifesto />
       <CardsDeUso />
+      <Ecossistema />
       <FraseGigante />
       <Depoimentos />
       <CartaFundador />
