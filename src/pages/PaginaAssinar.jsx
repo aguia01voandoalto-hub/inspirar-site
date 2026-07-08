@@ -304,7 +304,7 @@ export default function PaginaAssinar() {
               (PUC-Rio)
             </p>
             <div className="mt-6">
-              <BadgesLojas className="h-12" />
+              <BadgesLojas className="h-12" refSlug={ref} />
             </div>
           </Reveal>
         </div>
