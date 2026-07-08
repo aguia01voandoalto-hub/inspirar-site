@@ -8,6 +8,16 @@
       "source": "/parceiros",
       "destination": "https://app.inspirar.app/parceiros",
       "permanent": false
+    },
+    {
+      "source": "/baixar",
+      "destination": "https://app.inspirar.app/baixar",
+      "permanent": false
+    },
+    {
+      "source": "/app",
+      "destination": "https://app.inspirar.app/baixar",
+      "permanent": false
     }
   ]
 }
