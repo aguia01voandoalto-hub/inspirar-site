@@ -1,6 +1,8 @@
+import { useState, useEffect } from 'react'
 import { Reveal } from '../components/Reveal.jsx'
 import Footer from '../sections/Footer.jsx'
 import BadgesLojas from '../components/BadgesLojas.jsx'
+import { refDaUrl, buscarInfluenciador } from '../lib/indicacao.js'
 
 // Página de assinatura (recorrente) do inspirar.app — o próprio usuário assina
 // pra si. Diferente de /presente (pagamento único de presente com código de
@@ -82,7 +84,7 @@ function irParaPlanos(e) {
   document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth' })
 }
 
-function CardPlano({ p }) {
+function CardPlano({ p, refSlug, bonusAnual }) {
   return (
     <div
       className={`relative flex h-full flex-col items-center rounded-3xl border p-8 text-center transition-shadow ${
@@ -117,11 +119,17 @@ function CardPlano({ p }) {
         </span>
       )}
 
+      {bonusAnual && (
+        <span className="mt-2 rounded-full px-3 py-1 text-xs font-semibold [background:#f5e7c3] [color:#9a7c38]">
+          🎁 13 meses pelo preço de 12
+        </span>
+      )}
+
       <p className="mt-4 text-sm text-roxo/70">{p.nota}</p>
 
       <div className="mt-auto w-full pt-7">
         <a
-          href={p.link}
+          href={refSlug ? `${p.link}?ref=${refSlug}` : p.link}
           className="block w-full rounded-full bg-roxo px-8 py-4 text-sm font-medium tracking-wide text-creme transition-[filter] duration-300 hover:brightness-125"
         >
           Assinar no cartão · renova sozinho
@@ -141,6 +149,12 @@ function CardPlano({ p }) {
 }
 
 export default function PaginaAssinar() {
+  const [ref] = useState(() => refDaUrl())
+  const [inf, setInf] = useState(null)
+  useEffect(() => {
+    if (ref) buscarInfluenciador(ref).then(setInf)
+  }, [ref])
+
   return (
     <main className="bg-creme">
       {/* HERO */}
@@ -238,10 +252,24 @@ export default function PaginaAssinar() {
             </p>
           </Reveal>
 
-          <div className="mt-14 grid items-stretch gap-6 md:grid-cols-3">
+          {inf && (
+            <Reveal>
+              <div className="mx-auto mt-8 flex max-w-xl items-center justify-center gap-3 rounded-2xl border border-dourado/40 bg-dourado/10 px-5 py-3 text-center text-sm text-roxo">
+                {inf.avatar_url && (
+                  <img src={inf.avatar_url} alt="" className="h-9 w-9 shrink-0 rounded-full object-cover" />
+                )}
+                <span>
+                  🎁 Indicado por <strong>{inf.display_name}</strong> — no plano anual você ganha o{' '}
+                  <strong>13º mês grátis</strong> (13 meses pelo preço de 12).
+                </span>
+              </div>
+            </Reveal>
+          )}
+
+          <div className="mt-10 grid items-stretch gap-6 md:grid-cols-3">
             {PLANOS.map((p, i) => (
               <Reveal key={p.id} delay={i * 0.12}>
-                <CardPlano p={p} />
+                <CardPlano p={p} refSlug={ref} bonusAnual={p.id === 'anual' && !!inf} />
               </Reveal>
             ))}
           </div>
@@ -251,6 +279,17 @@ export default function PaginaAssinar() {
               ⚡ Pague no <strong className="text-roxo">Pix</strong>, boleto ou
               cartão. No cartão, a assinatura renova sozinha — cancele quando quiser.
             </p>
+            {ref && (
+              <p className="mt-2 text-center text-sm text-roxo/60">
+                Ainda não quer assinar?{' '}
+                <a
+                  href={`https://app.inspirar.app/?ref=${ref}`}
+                  className="underline decoration-dourado/60 underline-offset-4 hover:text-roxo hover:decoration-dourado"
+                >
+                  Crie sua conta grátis pela indicação →
+                </a>
+              </p>
+            )}
             <p className="mt-2 text-center text-sm text-roxo/60">
               🎁 É pra dar de presente?{' '}
               <a
