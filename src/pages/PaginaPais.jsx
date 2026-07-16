@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { Reveal } from '../components/Reveal.jsx'
 import Depoimentos from '../sections/Depoimentos.jsx'
 import Footer from '../sections/Footer.jsx'
+import BadgesLojas from '../components/BadgesLojas.jsx'
 
 // Link de pagamento do Asaas (gerado no admin). Enquanto não estiver pronto,
 // o botão rola até a oferta. Trocar por href real quando o Asaas estiver ligado.
@@ -581,6 +582,19 @@ export default function PaginaPais() {
                 Pix/boleto à vista
               </a>
             </p>
+          </Reveal>
+
+          {/* Disponível nas duas lojas oficiais — tranquiliza quem recebe */}
+          <Reveal delay={0.3}>
+            <div className="mt-12 flex flex-col items-center gap-4 border-t border-roxo/10 pt-10">
+              <p className="max-w-md text-sm leading-relaxed text-roxo/70">
+                📱 O inspirar.app está na{' '}
+                <strong className="text-roxo">App Store</strong> e no{' '}
+                <strong className="text-roxo">Google Play</strong> — ele baixa de
+                graça no iPhone ou no Android e entra com o código do presente.
+              </p>
+              <BadgesLojas className="h-11" />
+            </div>
           </Reveal>
         </div>
       </section>
