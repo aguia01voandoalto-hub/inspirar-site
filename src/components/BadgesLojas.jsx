@@ -4,10 +4,16 @@ import BadgeApple from './BadgeApple.jsx'
 // Os dois selos oficiais lado a lado — o app está nas duas lojas (Google Play
 // desde jul/2026, App Store aprovada em 4/7/2026).
 export default function BadgesLojas({ className = 'h-12', center = true, refSlug = null }) {
+  // As duas badges ficam numa CAIXA de tamanho IDÊNTICO: a altura vem do
+  // className e a largura é derivada por aspect-ratio (16/5 = 3,2:1), que
+  // acomoda a mais larga (App Store ~3:1) e a mais estreita (Google ~2,58:1).
+  // Com object-contain nas imgs, as duas lojas saem com o mesmo tamanho, sem
+  // distorcer os selos oficiais.
+  const caixa = `${className} aspect-[16/5]`
   return (
     <div className={`flex flex-wrap items-center gap-3 ${center ? 'justify-center' : ''}`}>
-      <BadgePlay className={className} refSlug={refSlug} />
-      <BadgeApple className={className} refSlug={refSlug} />
+      <BadgePlay className={caixa} refSlug={refSlug} />
+      <BadgeApple className={caixa} refSlug={refSlug} />
     </div>
   )
 }

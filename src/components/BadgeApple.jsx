@@ -6,13 +6,14 @@ const APP_STORE = 'https://apps.apple.com/br/app/inspirar-app/id6783974266'
 // download NATIVO pela App Store continua cego (limitação da loja — Fase 2).
 export default function BadgeApple({ className = 'h-14', refSlug = null }) {
   const href = refSlug ? `https://app.inspirar.app/?ref=${refSlug}` : APP_STORE
+  // Mesma caixa da BadgePlay (altura + aspect do BadgesLojas); img object-contain.
   return (
-    <a href={href} className="inline-block">
+    <a href={href} className={`inline-flex items-center justify-center ${className}`}>
       <img
         src="/badges/app-store.svg"
         alt="Baixar na App Store"
         loading="lazy"
-        className={`w-auto ${className}`}
+        className="max-h-full max-w-full object-contain"
       />
     </a>
   )

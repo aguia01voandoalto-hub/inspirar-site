@@ -9,13 +9,16 @@ const PLAY_STORE = 'https://play.google.com/store/apps/details?id=app.inspirar'
 // mesmo Chrome, então o cookie sobrevive à instalação. Sem ref, vai direto à loja.
 export default function BadgePlay({ className = 'h-14', refSlug = null }) {
   const href = refSlug ? `https://app.inspirar.app/?ref=${refSlug}` : PLAY_STORE
+  // O className é a CAIXA (altura + aspect vindos do BadgesLojas); a img preenche
+  // com object-contain, centralizada. Assim a badge fica com tamanho idêntico ao
+  // da App Store mesmo tendo proporção diferente (evita distorcer o selo oficial).
   return (
-    <a href={href} className="inline-block">
+    <a href={href} className={`inline-flex items-center justify-center ${className}`}>
       <img
         src="/badges/google-play.png"
         alt="Disponível no Google Play"
         loading="lazy"
-        className={`w-auto ${className}`}
+        className="max-h-full max-w-full object-contain"
       />
     </a>
   )
