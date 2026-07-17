@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-const PALAVRAS = 'Sua conexão com Deus em meio ao caos da rotina.'.split(' ')
+const PALAVRAS = 'Não deixe o barulho do mundo silenciar a voz do Pai.'.split(' ')
 
 const container = {
   visible: { transition: { staggerChildren: 0.14, delayChildren: 0.5 } },
@@ -69,8 +69,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut', delay: 2.2 }}
           >
-            Conheça o inspirar.app. Devocionais, oração e um caderno que aproxima
-            você de Deus.
+            O seu refúgio espiritual está a um toque de distância.
           </motion.p>
 
           <motion.a
