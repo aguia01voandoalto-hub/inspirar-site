@@ -22,7 +22,11 @@ export default function Hero() {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ duration: 2, ease: 'easeOut' }}
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-noite/70 via-noite/20 to-noite/80" />
+      {/* Legibilidade: degradê vertical mais forte no meio (onde o texto senta no
+          desktop) + scrim horizontal do lado do texto. O lado direito segue mais
+          claro, preservando o dourado do amanhecer. */}
+      <div className="absolute inset-0 bg-gradient-to-b from-noite/75 via-noite/45 to-noite/90" />
+      <div className="absolute inset-0 bg-gradient-to-r from-noite/80 via-noite/30 to-transparent" />
 
       <header className="relative z-10 flex items-center justify-between px-6 pt-6 md:px-12 md:pt-8">
         <motion.a
@@ -51,7 +55,7 @@ export default function Hero() {
       <div className="relative z-10 flex flex-1 flex-col justify-end px-6 pb-20 md:justify-center md:px-12 md:pb-0">
         <div className="max-w-3xl">
           <motion.h1
-            className="font-serif text-5xl font-light leading-[1.08] text-creme md:text-7xl"
+            className="font-serif text-5xl font-light leading-[1.08] text-creme [text-shadow:0_2px_22px_rgba(0,0,0,0.8)] md:text-7xl"
             variants={container}
             initial="hidden"
             animate="visible"
