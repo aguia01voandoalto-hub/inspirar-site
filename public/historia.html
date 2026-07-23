@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Você não falhou quinze vezes — Inspirar</title>
+<meta name="description" content="A explicação que ninguém te deu sobre por que a sua rotina com Deus sempre para na terceira semana.">
+<meta property="og:title" content="Você não falhou quinze vezes. Você foi mal servido quinze vezes.">
+<meta property="og:description" content="A explicação que ninguém te deu sobre por que a sua rotina com Deus sempre para na terceira semana.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#141210">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#141210;
+  --night-deep:#0C0A09;
+  --night-line:#2E2A25;
+  --night-text:#F5F0E6;
+  --night-soft:#A79C8C;
+  --night-faint:#8A7F70;
+  --gold:#C9A227;
+  --gold-deep:#A8871C;
+  --paper:#F6F1E7;
+  --paper-deep:#EDE6D8;
+  --ink:#23201C;
+  --ink-soft:#5C544A;
+  --ink-faint:#8A8073;
+  --rule:#DAD1BF;
+  --max:660px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Lora',Georgia,serif;
+  font-size:19px;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+
+/* ---------- topo escuro ---------- */
+.hero-band{background:var(--night);color:var(--night-text)}
+.hero{padding:60px 0 52px;text-align:center}
+.eyebrow{
+  font-family:'Inter',sans-serif;
+  font-size:11px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--night-faint);
+  margin-bottom:26px;
+}
+.hero h1{
+  font-family:'Lora',serif;
+  font-weight:500;
+  font-size:clamp(29px,5.6vw,40px);
+  line-height:1.16;
+  letter-spacing:-.015em;
+  color:var(--night-text);
+  margin-bottom:12px;
+}
+.hero .turnline{
+  font-family:'Lora',serif;
+  font-weight:400;
+  font-style:italic;
+  font-size:clamp(29px,5.6vw,40px);
+  line-height:1.16;
+  letter-spacing:-.015em;
+  color:var(--gold);
+  margin-bottom:22px;
+}
+.hero .sub{
+  font-size:17px;
+  line-height:1.6;
+  color:var(--night-soft);
+  max-width:460px;
+  margin:0 auto 34px;
+}
+.player{
+  position:relative;
+  width:100%;
+  max-width:330px;
+  margin:0 auto;
+  aspect-ratio:9/16;
+  background:var(--night-deep);
+  border:1px solid var(--night-line);
+  border-radius:10px;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.player iframe,.player video{position:absolute;inset:0;width:100%;height:100%;border:0}
+.scroll-hint{
+  font-family:'Inter',sans-serif;
+  font-size:14px;
+  color:var(--night-faint);
+  margin-top:22px;
+}
+.scroll-hint a{color:var(--gold);text-decoration:none;border-bottom:1px solid var(--night-line);padding-bottom:1px}
+.scroll-hint a:hover,.scroll-hint a:focus-visible{border-color:var(--gold)}
+
+/* ---------- carta ---------- */
+.letter{padding-top:52px}
+.letter p{margin-bottom:24px}
+.letter .lead{font-size:22px;line-height:1.65}
+.letter strong{font-weight:600}
+.letter em{font-style:italic}
+
+.chapter{
+  font-family:'Inter',sans-serif;
+  font-size:11px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin:54px 0 22px;
+  padding-top:22px;
+  border-top:1px solid var(--rule);
+}
+
+.beat{
+  font-family:'Lora',serif;
+  font-weight:500;
+  font-size:clamp(24px,4.4vw,31px);
+  line-height:1.3;
+  letter-spacing:-.012em;
+  color:var(--ink);
+  margin:40px 0;
+  padding-left:20px;
+  border-left:3px solid var(--gold);
+  border-radius:0;
+}
+.beat em{color:var(--gold-deep)}
+
+.turn{
+  position:relative;
+  background:var(--night);
+  color:var(--night-text);
+  border-radius:8px;
+  padding:44px 34px;
+  margin:44px 0;
+  overflow:hidden;
+  isolation:isolate;
+}
+.turn-bg{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  z-index:-2;
+}
+.turn::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(15,13,11,.82);
+  z-index:-1;
+}
+.turn p{margin-bottom:18px;color:#D8CFC0}
+.turn p:last-child{margin-bottom:0}
+.turn strong{color:var(--night-text);font-weight:500}
+.turn .name{
+  font-family:'Caveat',cursive;
+  font-size:clamp(32px,5.8vw,42px);
+  color:var(--gold);
+  display:block;
+  margin-bottom:16px;
+  line-height:1.2;
+}
+
+/* ---------- oferta ---------- */
+.gifts{list-style:none;margin:32px 0}
+.gifts li{padding:22px 0;border-top:1px solid var(--rule)}
+.gifts li:last-child{border-bottom:1px solid var(--rule)}
+.gifts .label{
+  display:block;
+  font-family:'Inter',sans-serif;
+  font-size:12px;
+  font-weight:500;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--gold-deep);
+  margin-bottom:8px;
+}
+.gifts .body{margin:0;font-size:18px;line-height:1.65}
+
+/* ---------- cta ---------- */
+.cta-block{margin:46px 0;text-align:center}
+.cta{
+  display:inline-block;
+  font-family:'Inter',sans-serif;
+  font-size:17px;
+  font-weight:500;
+  color:var(--night);
+  background:var(--gold);
+  padding:18px 42px;
+  border-radius:4px;
+  text-decoration:none;
+  transition:background .18s ease;
+}
+.cta:hover,.cta:focus-visible{background:var(--gold-deep);color:var(--night-text)}
+.cta:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+.cta-note{
+  font-family:'Inter',sans-serif;
+  font-size:14px;
+  color:var(--ink-faint);
+  margin-top:14px;
+}
+
+/* ---------- fecho escuro ---------- */
+.close-band{background:var(--night);color:var(--night-text);margin-top:56px}
+.close{padding:56px 0;text-align:center}
+.close .cta{background:var(--gold)}
+.close .cta-note{color:var(--night-faint)}
+.close .slogan{
+  font-family:'Caveat',cursive;
+  font-size:clamp(27px,5vw,34px);
+  color:var(--gold);
+  margin-top:28px;
+}
+footer{
+  padding:30px 0 44px;
+  text-align:center;
+  font-family:'Inter',sans-serif;
+  font-size:13px;
+  color:var(--night-faint);
+}
+
+@media (max-width:600px){
+  body{font-size:18px}
+  .hero{padding:44px 0 40px}
+  .player{max-width:280px}
+  .turn{padding:34px 26px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+  .turn-bg{display:none}
+  .turn{background-image:url('imagens/caderno-fundo.jpg');background-size:cover;background-position:center}
+}
+</style>
+</head>
+<body>
+
+<div class="hero-band">
+  <div class="wrap">
+    <section class="hero">
+      <p class="eyebrow">Inspirar</p>
+      <h1>Você não falhou<br>quinze vezes.</h1>
+      <p class="turnline">Você foi mal servido<br>quinze vezes.</p>
+      <p class="sub">A explicação que ninguém te deu sobre por que a sua rotina com Deus sempre para na terceira semana.</p>
+
+      <div class="player">
+        <iframe src="https://www.youtube-nocookie.com/embed/KXPSneQIvaw?rel=0&amp;modestbranding=1&amp;playsinline=1" title="Você não falhou quinze vezes" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <p class="scroll-hint">Prefere ler? <a href="#carta">A história está escrita aqui embaixo.</a></p>
+    </section>
+  </div>
+</div>
+
+<main class="wrap">
+  <article class="letter" id="carta">
+
+    <p class="lead">Todo mundo conhece uma.</p>
+
+    <p>Uma avó, uma tia, uma vizinha. Daquelas que nunca leram um devocional na vida. Nunca fizeram um curso de vida espiritual. Nunca tiveram a Bíblia de estudo com capa de couro. E mesmo assim tinham com Deus a coisa mais firme que você já viu alguém ter.</p>
+
+    <p>Pensa nela agora. Na cozinha, mãos na massa, e um caderno velho aberto ao lado do fogão. Um caderno <strong>sujo</strong> — manchado de café, de gordura, letra tremida, páginas dobradas. Receitas, sim. Mas no meio das receitas, recados pra Deus. "Obrigada pela chuva." "Cuida do João hoje." Coisa de segundos, escrita com a mão suja de farinha.</p>
+
+    <p>Cinquenta anos assim. Sem falhar um dia.</p>
+
+    <p class="beat">E você, com a estante cheia, não passa de três semanas.</p>
+
+    <p>E ninguém nunca te explicou o que aquele caderno sujo tinha, que a sua estante inteira não tem.</p>
+
+    <p>Segura essa pergunta. Porque ela muda tudo.</p>
+
+    <p class="chapter">E talvez com você seja parecido</p>
+
+    <p>Você já tentou manter uma rotina com Deus mais vezes do que consegue contar. Comprou a Bíblia de estudo. O devocional de trezentos e sessenta e cinco dias. Fez o curso que prometia transformar sua vida de oração em vinte e um dias. Baixou o plano de leitura. Marcou no calendário.</p>
+
+    <p>E parou na terceira semana. Toda vez. Há mais de quinze anos.</p>
+
+    <p>Deixa eu te mostrar por outro ângulo. Porque de fora, fica óbvio.</p>
+
+    <p>Pensa em quantas vezes você tentou começar a se exercitar. Comprou o tênis certo. A roupa. Pagou a matrícula da academia — talvez o ano inteiro de uma vez, achando que o dinheiro ia te obrigar. Baixou o app de treino. Seguiu a nutricionista.</p>
+
+    <p>E foi três vezes. Depois, nunca mais.</p>
+
+    <p>Agora me diz: quando você largou a academia, foi porque <strong>você</strong> é um fracasso? Ou porque te venderam um plano genérico, feito pra ninguém, que não tinha nada a ver com o seu corpo, sua rotina, o seu cansaço de verdade?</p>
+
+    <p>Você já sabe a resposta. Não era você. Era a ferramenta errada.</p>
+
+    <p>E com a sua vida de fé, aconteceu <strong>exatamente</strong> a mesma coisa. Te venderam quinze ferramentas genéricas. Um devocional escrito pra "todo mundo" — que é o mesmo que dizer: pra ninguém.</p>
+
+    <p class="beat">Você não falhou quinze vezes.<br>Você foi mal servido quinze vezes.</p>
+
+    <p class="chapter">O que ninguém diz em voz alta</p>
+
+    <p>Todo devocional que você comprou foi feito pra você <strong>consumir</strong>. Nenhum foi feito pra você <strong>participar</strong>.</p>
+
+    <p>Você foi tratado como plateia da sua própria fé. Sentava, lia o texto que outra pessoa escreveu, sobre a vida de outra pessoa, e ia dormir. No dia seguinte, mais um texto de outra pessoa. E outro. E outro.</p>
+
+    <p>Nunca foi sobre você. Você era só o leitor.</p>
+
+    <p>E é impossível manter, por quinze anos, uma rotina onde você não é ninguém. Onde você só assiste.</p>
+
+    <p class="beat">Ninguém abandona o que é seu.<br>As pessoas abandonam o que é dos outros.</p>
+
+    <p class="chapter">A virada</p>
+
+    <p>O problema nunca foi a sua disciplina. Foi o seu <strong>lugar</strong> na história.</p>
+
+    <p>Lembra do caderno? O caderno sujo, de mão, no canto do fogão? Era <strong>dela</strong>. Cada linha, escrita por ela. Não era o devocional de outra pessoa que ela lia — era a conversa <strong>dela</strong> com Deus, que ela mesma escrevia.</p>
+
+    <p>Era isso que a sua estante não tem. Sua estante é cheia da fé dos <strong>outros</strong>. O caderno dela era a fé <strong>dela</strong>.</p>
+
+    <p>E é por isso que ela durou cinquenta anos, e você não passa de três semanas. Não é disciplina.</p>
+
+    <p class="beat"><em>Você não precisa de disciplina pra abrir um lugar que é seu. Você precisa de disciplina pra cumprir tarefa dos outros.</em></p>
+
+    <p>Enquanto você for leitor do devocional de outra pessoa, você <strong>sempre</strong> vai desistir. Porque não dá pra se apaixonar por uma história em que você não existe. Mas no minuto em que você deixa de ser leitor e vira <strong>autor</strong> — em que a página passa a ser sua, a conversa passa a ser só de vocês dois — a rotina para de ser esforço.</p>
+
+    <div class="turn">
+      <video class="turn-bg" src="videos/caderno-fundo.mp4" poster="imagens/caderno-fundo.jpg" autoplay muted loop playsinline aria-hidden="true"></video>
+      <span class="name">Meu Caderno com Deus</span>
+      <p>É o caderno dela — no seu bolso. Não é mais um devocional pra você ler. É o primeiro lugar onde <strong>você</strong> escreve a sua história de fé. Do jeito que você chega: cansado, sem palavras, sem ter que estar bem primeiro.</p>
+      <p>Deus não te pede relatório. Não te chama de dramático. Não revira os olhos.</p>
+    </div>
+
+    <p>E é por isso que quem entra não abandona na terceira semana. Porque pela primeira vez em quinze anos — não é a fé de outra pessoa. É a sua.</p>
+
+    <p>E se você está pensando "mas eu já tentei de tudo" — não, você não tentou isso. Você tentou quinze versões da mesma coisa: consumir. Você nunca tentou a única coisa diferente: ser autor. E não dá pra dizer que falhou em algo que nunca te ofereceram.</p>
+
+    <div class="cta-block">
+      <a class="cta" href="https://inspirar.app/baixar">Começar a minha história</a>
+      <p class="cta-note">Baixe grátis e escreva a primeira página hoje.</p>
+    </div>
+
+    <p class="chapter">O que você encontra dentro</p>
+
+    <ul class="gifts">
+      <li>
+        <span class="label">O essencial</span>
+        <p class="body"><strong>Meu Caderno com Deus.</strong> Seu lugar diário de escrita. Não um texto pra ler — uma página que é sua, que acompanha o que você sente, no seu tempo. É aqui que a rotina finalmente para de falhar.</p>
+      </li>
+      <li>
+        <span class="label">Pra você não travar</span>
+        <p class="body"><strong>A base.</strong> Um caminho inicial que te pega pela mão nos primeiros dias, diante da página em branco. Você nunca fica sem saber por onde começar.</p>
+      </li>
+      <li>
+        <span class="label">Seu espaço de adoração</span>
+        <p class="body"><strong>Citações, devocionais e orações diárias.</strong> Pra quando faltar palavra. Não pra você consumir e esquecer — pra alimentar o que você escreve no seu caderno.</p>
+      </li>
+      <li>
+        <span class="label">E o maior de todos</span>
+        <p class="body"><strong>Tudo isso, feito pra você.</strong> Não um devocional igual pra todo mundo. Devocionais que nascem do que <strong>você</strong> está vivendo hoje. Frases que respondem ao seu momento. Lembra da promessa lá do começo — que o problema era a fé ser dos outros? É aqui que ela deixa de ser.</p>
+      </li>
+    </ul>
+
+    <p class="chapter">Sem pressa</p>
+
+    <p>Pensa no que você já gastou. Soma as Bíblias de estudo. Os devocionais que morreram em fevereiro. Os cursos de vinte e um dias. Os planos que você baixou e nunca abriu. São <strong>anos</strong> de compras avulsas que não seguraram você — porque nenhuma te deu um lugar que fosse seu.</p>
+
+    <p>E se você não entrar agora, tudo bem. De verdade. Eu sei que você vai pensar: "já tentei tantas vezes, por que essa seria diferente?". É uma pergunta justa.</p>
+
+    <p>Só lembra de uma coisa. O tempo é seu. E o problema, também. Ele continua te esperando no sofá, com a luz apagada, exatamente onde está há quinze anos.</p>
+
+    <p class="beat">A pergunta não é se você tem pressa.<br>É se você aguenta mais quinze.</p>
+
+    <p>Então eu te pergunto, com honestidade. O que te deixa mais em paz? Continuar comprando a fé pronta dos outros — aquela que morre toda terceira semana e te deixa se sentindo um fracasso?</p>
+
+    <p>Ou finalmente ter um lugar onde a história é <strong>sua</strong>. Onde você chega do jeito que está. E onde — pela primeira vez — você não desiste. Porque não é tarefa. É seu.</p>
+
+  </article>
+</main>
+
+<div class="close-band">
+  <div class="wrap">
+    <section class="close">
+      <a class="cta" href="https://inspirar.app/baixar">Começar a minha história</a>
+      <p class="cta-note">Baixe grátis. Disponível para Android e iPhone.</p>
+      <p class="slogan">Sua fé, sua voz, seu caminho.</p>
+    </section>
+    <footer>Inspirar</footer>
+  </div>
+</div>
+
+</body>
+</html>
