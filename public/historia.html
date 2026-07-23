@@ -211,6 +211,14 @@ body{
   margin-top:14px;
 }
 
+/* pulso dourado no botão quando o vídeo termina — "é agora", sem ser tacky */
+@keyframes ctaPulse{
+  0%{box-shadow:0 0 0 0 rgba(201,162,39,.55)}
+  70%{box-shadow:0 0 0 16px rgba(201,162,39,0)}
+  100%{box-shadow:0 0 0 0 rgba(201,162,39,0)}
+}
+.cta.is-live{animation:ctaPulse 1.8s ease-out infinite}
+
 /* ---------- fecho escuro ---------- */
 .close-band{background:var(--night);color:var(--night-text);margin-top:56px}
 .close{padding:56px 0;text-align:center}
@@ -239,6 +247,7 @@ footer{
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   *{transition:none!important}
+  .cta.is-live{animation:none}
   .turn-bg{display:none}
   .turn{background-image:url('imagens/caderno-fundo.jpg');background-size:cover;background-position:center}
 }
@@ -259,7 +268,7 @@ footer{
       </div>
 
       <div class="cta-block">
-        <a class="cta" href="https://inspirar.app/baixar">Começar a minha história</a>
+        <a class="cta" id="cta-video" href="https://inspirar.app/baixar">Começar a minha história</a>
       </div>
 
       <p class="scroll-hint">Prefere ler? <a href="#carta">A história está escrita aqui embaixo.</a></p>
@@ -394,6 +403,21 @@ footer{
     <footer>Inspirar</footer>
   </div>
 </div>
+
+<script>
+(function(){
+  var v = document.querySelector('.player video');
+  var cta = document.getElementById('cta-video');
+  if(!v || !cta) return;
+  // Acende o pulso quando o vídeo termina (ou chega nos últimos segundos).
+  var aceso = false;
+  function acender(){ if(aceso) return; aceso = true; cta.classList.add('is-live'); }
+  v.addEventListener('ended', acender);
+  v.addEventListener('timeupdate', function(){
+    if(v.duration && v.currentTime >= v.duration - 3) acender();
+  });
+})();
+</script>
 
 </body>
 </html>
