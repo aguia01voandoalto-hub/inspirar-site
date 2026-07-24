@@ -34,7 +34,7 @@ export default function MomentoMarca() {
               </p>
               <p className="mt-3 text-sm leading-relaxed text-creme/60">
                 Assine, baixe o app e comece agora — a partir de{' '}
-                <strong className="text-creme/80">R$ 14,90/mês</strong> no plano anual.
+                <strong className="text-creme/80">R$ 8,32/mês</strong> no plano anual.
               </p>
 
               <div className="mt-8">

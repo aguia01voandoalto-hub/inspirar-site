@@ -33,8 +33,7 @@ const CHECKOUT = (plano) => `https://app.inspirar.app/api/public/checkout/${plan
 // por período, renovação manual — limitação do Asaas, Pix não tem débito auto).
 const PLANOS = [
   { id: 'mensal', nome: 'Mensal', mes: 'R$ 29,90', ancora: null, detalhe: 'cobrado mês a mês', badge: null, destaque: false, pix: 'https://www.asaas.com/c/60rmms1mwxa6cv2w' },
-  { id: 'anual', nome: 'Anual', mes: 'R$ 14,90', ancora: 'R$ 29,90', detalhe: 'cobrado R$ 178,80 uma vez por ano', badge: 'melhor valor · economize 50%', destaque: true, pix: 'https://www.asaas.com/c/yx5kbq02kpb3pgo3' },
-  { id: 'trimestral', nome: 'Trimestral', mes: 'R$ 21,90', ancora: 'R$ 29,90', detalhe: 'cobrado R$ 65,70 a cada 3 meses', badge: null, destaque: false, pix: 'https://www.asaas.com/c/odskxxbftl66lug9' },
+  { id: 'anual', nome: 'Anual', mes: 'R$ 8,32', ancora: 'R$ 29,90', detalhe: 'de R$ 178,80 por R$ 99,90 no primeiro ano', badge: 'OFERTA · 44% OFF', destaque: true, pix: 'https://www.asaas.com/c/yx5kbq02kpb3pgo3' },
 ]
 
 export default function ComecarHoje() {

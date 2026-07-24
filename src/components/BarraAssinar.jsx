@@ -19,7 +19,7 @@ export default function BarraAssinar() {
     >
       <div className="flex items-center justify-between gap-3">
         <div className="leading-tight">
-          <p className="text-sm font-medium text-creme">A partir de R$ 14,90/mês</p>
+          <p className="text-sm font-medium text-creme">A partir de R$ 8,32/mês</p>
           <p className="text-[0.7rem] text-creme/60">⚡ Pix · acesso na hora</p>
         </div>
         <a

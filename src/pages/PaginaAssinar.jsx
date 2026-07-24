@@ -35,28 +35,15 @@ const PLANOS = [
   {
     id: 'anual',
     nome: 'Anual',
-    mes: 'R$ 14,90',
+    mes: 'R$ 8,32',
     ancora: 'R$ 29,90',
-    cobranca: 'cobrado R$ 178,80 uma vez por ano',
-    economia: 'economize R$ 180 no ano',
-    nota: 'menos de R$ 0,50 por dia — o preço de um café',
+    cobranca: 'de R$ 178,80 por R$ 99,90 no primeiro ano',
+    economia: 'economize R$ 258 no ano',
+    nota: 'menos de R$ 0,30 por dia — o preço de um café',
     link: CHECKOUT('anual'),
     pix: 'https://www.asaas.com/c/yx5kbq02kpb3pgo3',
-    badge: 'Melhor valor · economize 50%',
+    badge: 'OFERTA · 44% OFF',
     destaque: true,
-  },
-  {
-    id: 'trimestral',
-    nome: 'Trimestral',
-    mes: 'R$ 21,90',
-    ancora: 'R$ 29,90',
-    cobranca: 'cobrado R$ 65,70 a cada 3 meses',
-    economia: 'economize 27%',
-    nota: 'um meio-termo tranquilo',
-    link: CHECKOUT('trimestral'),
-    pix: 'https://www.asaas.com/c/odskxxbftl66lug9',
-    badge: null,
-    destaque: false,
   },
 ]
 
@@ -200,7 +187,7 @@ export default function PaginaAssinar() {
               </a>
               <p className="mt-4 text-base text-creme">
                 A partir de{' '}
-                <strong className="text-dourado">R$ 14,90/mês</strong> no plano anual
+                <strong className="text-dourado">R$ 8,32/mês</strong> no plano anual
               </p>
             </div>
           </div>
@@ -425,7 +412,7 @@ export default function PaginaAssinar() {
             </a>
           </div>
           <p className="mt-5 text-sm text-creme/70">
-            A partir de R$ 14,90/mês · cancele quando quiser
+            A partir de R$ 8,32/mês · cancele quando quiser
           </p>
         </Reveal>
       </section>
